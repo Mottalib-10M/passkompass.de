@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'de';
+---
+<PageLayout title={`Redaktionsgrundsätze von ${SITE_NAMES[lang]}: Quellen und Prüfung`} description="Woher Fragen, Lösungen, Fristen und Gebühren kommen, wie wir Lösungen ohne amtlichen Schlüssel ermitteln, wann wir prüfen und was bei einem Fehler geschieht." lang={lang} noindex={true} breadcrumbs={[{ label: 'Redaktionsgrundsätze' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Redaktionsgrundsätze und Korrekturen</h1>
+    <p>Wer mit einer falschen Lösung lernt oder mit einer überholten Frist plant, verliert Zeit und Geld. Deshalb steht hier, woher alles kommt und was passiert, wenn etwas nicht stimmt.</p>
+    <h2>Verantwortung</h2><p>Inhalte und Rechner verantwortet {AUTHOR_NAME}. Kontakt: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Nur Primärquellen</h2>
+    <ul>
+      <li><strong>Fragen</strong>: der Gesamtfragenkatalog des BAMF und Anlage 1 der Einbürgerungstestverordnung;</li>
+      <li><strong>Lösungen</strong>: Grundgesetz, Landesverfassungen, Wahlgesetze, amtliche Angaben von Bund und Ländern;</li>
+      <li><strong>Fristen und Gebühren</strong>: Staatsangehörigkeitsgesetz, Aufenthaltsgesetz, Aufenthaltsverordnung, Einbürgerungstestverordnung auf gesetze-im-internet.de, dazu Rechengrößen der Deutschen Rentenversicherung und Merkblätter von Behörden.</li>
+    </ul>
+    <p>Andere Übungsseiten, Foren und Ratgeber sind keine Quelle, auch nicht für Lösungen.</p>
+    <h2>Lösungen ohne amtlichen Schlüssel</h2><p>Das BAMF veröffentlicht den Katalog ohne Lösungen. Jede Lösung wird deshalb an einer Primärquelle festgemacht und von einer zweiten Durchsicht bestätigt. Wo eine Frage von der Tagespolitik abhängt, folgen wir dem neuesten Stand des BAMF-Katalogs und nennen sein Datum.</p>
+    <h2>Noch nicht Veröffentlichtes</h2><p>Was nur angekündigt oder im Entwurf ist, heißt hier „noch nicht veröffentlicht“. Der Rechner rechnet damit erst, wenn die Änderung verkündet ist.</p>
+    <h2>Rhythmus</h2><p>Ein Skript vergleicht regelmäßig den Katalog des BAMF und die Gesetzestexte mit unserem Stand und meldet jede Änderung. Vollständige Durchsicht mindestens alle {REVIEW_CYCLE_MONTHS} Monate und nach jeder Änderung des Staatsangehörigkeitsgesetzes oder des Katalogs.</p>
+    <h2>Umgang mit Fehlern</h2>
+    <ol><li>Prüfung an der Primärquelle.</li><li>Korrektur in der Daten- oder Parameterdatei und ein neuer Test.</li><li>Neues Datum auf allen Seiten.</li></ol>
+    <h2>Unabhängigkeit</h2><p>Kein Geld von Behörden, Sprachschulen, Prüfstellen oder Kanzleien. Keine Kursempfehlung, kein Formular, kein Rückruf.</p>
+    <p>Siehe auch <a href={route('method', lang)}>Methode</a>. Fassung: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

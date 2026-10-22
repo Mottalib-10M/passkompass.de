@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { srcLink } from '../../lib/helpers';
+import { HOME } from '../../content/home';
+import { KIT as K } from '../../lib/kit';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+const lang = 'de';
+const path = route('about', lang);
+const title = 'Über Passkompass: Herausgeber, Quellen, Lösungen 2026';
+const description = 'Passkompass wird von Radif Partners herausgegeben: der amtliche Fragenkatalog mit selbst geprüften Lösungen, Rechner nach dem StAG 2026, ohne Konto und Kurse.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Start', path: route('home', lang) }, { name: 'Über uns', path }])]} breadcrumbs={[{ label: 'Über uns' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>Über {SITE_NAMES[lang]}</h1>
+    <p>{AUTHOR_DESC.de}</p>
+    <h2>Warum es diese Seite gibt</h2>
+    <p>Wer nach dem Einbürgerungstest sucht, findet vor allem zwei Arten von Seiten. Die eine zeigt die Fragen, aber ohne Erklärung, ohne Bezug zum eigenen Bundesland oder hinter einer Anmeldung. Die andere erklärt die Einbürgerung, rechnet aber nicht aus, ab wann man selbst den Antrag stellen kann, und ist oft noch auf dem Stand vor der Reform oder vor der Abschaffung der Einbürgerung nach drei Jahren.</p>
+    <p><strong>{HOME.de.valeur}</strong></p>
+    <h2>Wer sie herausgibt</h2>
+    <p>Herausgeber ist {AUTHOR_NAME}, ein Unternehmen, das Rechner aus öffentlichen Daten baut. Es ist keine Behörde, nicht das BAMF, keine Prüfstelle, keine Sprachschule und keine Kanzlei. Es verkauft nichts, vermittelt keine Kurse, verlangt keinen Namen, keine E-Mail-Adresse und keine Telefonnummer. Die Seiten enthalten keine Affiliate-Links.</p>
+    <LegalIdentity lang={lang} />
+    <h2>Woher Fragen und Zahlen kommen</h2>
+    <p>Die {K.P.katalog.fragen} Fragen stammen aus dem <Fragment set:html={s('bamf-katalog', 'Gesamtfragenkatalog des BAMF')} />, Anlage 1 der <Fragment set:html={s('einbtestv', 'Einbürgerungstestverordnung')} />. Das BAMF veröffentlicht keinen Lösungsschlüssel; die Lösungen hat {AUTHOR_NAME} selbst ermittelt und zweimal geprüft. Bilder des Katalogs geben wir in Worten wieder. Fristen und Gebühren stammen aus dem <Fragment set:html={s('stag10', 'Staatsangehörigkeitsgesetz')} />, dem Aufenthaltsgesetz und den Verordnungen, jeweils mit Paragraf. Wie gerechnet wird, steht auf der Seite <a href={route('method', lang)}>Methode</a>; wie wir korrigieren, in den <a href={route('editorial', lang)}>Redaktionsgrundsätzen</a>.</p>
+    <h2>Was die Seite nicht leistet</h2>
+    <p>Sie nimmt keine Anträge an, kennt Ihre Akte nicht und kann nichts beschleunigen. Der Rechner gibt eine Einschätzung nach dem Gesetzestext, keine Rechtsberatung und keine Zusage; entscheidend ist die Prüfung durch Ihre Einbürgerungsbehörde.</p>
+    <h2>Schreiben Sie uns</h2>
+    <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, wenn Ihnen eine falsche Lösung oder eine veraltete Zahl auffällt.</p>
+  </article>
+</PageLayout>

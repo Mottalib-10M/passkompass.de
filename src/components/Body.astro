@@ -1,0 +1,19 @@
+---
+/** Le corps HTML d'un fichier de contenu, ses mini-simulateurs rendus en îlots. */
+import MiniSim from './calc/MiniSim';
+import Trainer from './calc/Trainer';
+import { miniHref } from '../lib/mini-targets';
+import type { Lang } from '../lib/format';
+interface Props { html: string; path: string; lang: Lang }
+const { html, path, lang } = Astro.props;
+const parts = html.split(/<!--mini:([A-Za-z0-9_]+)(?:\|([A-Za-z0-9+/=]+))?-->/);
+const decode = (b?: string) => (b ? Buffer.from(b, 'base64').toString('utf8') : undefined);
+const quizArg = (b?: string) => { const a = b ? JSON.parse(decode(b)!) : {}; return a.d ?? {}; };
+---
+<div class="prose prose-slate max-w-none">
+  {parts.map((p, i) => i % 3 === 0 ? <Fragment set:html={p ?? ''} />
+    : i % 3 === 1 ? (p === 'katalog' || p === 'probe'
+      ? <div data-chrome data-simulateur-secondaire class="not-prose my-8"><Trainer client:visible lang={lang} mode={p} land={quizArg(parts[i + 1]).land} auswahl={quizArg(parts[i + 1]).auswahl} idPrefix={`m${i}`} /></div>
+      : <div data-chrome class="not-prose"><MiniSim client:load kind={p} lang={lang} arg={decode(parts[i + 1])} href={miniHref(p, lang, path)} /></div>)
+    : null)}
+</div>

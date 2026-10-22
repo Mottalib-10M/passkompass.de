@@ -1,0 +1,46 @@
+---
+/** Methode : Katalog, Lösungen, Probeprüfung, Rechner, Grenzen. Jede Zahl aus params-2026.json. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { srcLink } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+const lang = 'de';
+const path = route('method', lang);
+const P = K.P, T = P.test, E = P.einb, G = P.gebuehr;
+const title = 'Passkompass-Methode 2026: Katalog, Lösungen, Rechner';
+const description = 'Wie Passkompass arbeitet: amtlicher Fragenkatalog des BAMF, selbst ermittelte Lösungen, Ziehung der Probeprüfung, Fristen und Gebühren nach StAG 2026.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const d = (x: string) => displayDate(x, 'de-DE');
+const bilder = K.FRAGEN.filter((f) => f.b).length;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'Methode', description, path, lang }), breadcrumbSchema([{ name: 'Start', path: route('home', lang) }, { name: 'Methode', path }])]} breadcrumbs={[{ label: 'Methode' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>Wie Passkompass arbeitet</h1>
+    <p>Alles auf dieser Seite stammt aus zwei Arten von Quellen: dem amtlichen Fragenkatalog und den Gesetzestexten. Was Sie in den Übungstest oder den Rechner eingeben, verlässt Ihren Browser nicht. Stand der Gesetzeslesung: {d(P.retrieved_at)}.</p>
+    <h2>Der Fragenkatalog</h2>
+    <p>Grundlage ist der <Fragment set:html={s('bamf-katalog', 'Gesamtfragenkatalog des BAMF')} /> mit Stand vom {d(P.katalog.stand)}: {P.katalog.allgemein} allgemeine Fragen und {P.katalog.proLand} Fragen für jedes der 16 Länder, zusammen {P.katalog.fragen} Fragen, die ein Prüfling sehen kann. Der Katalog ist Anlage 1 der <Fragment set:html={s('einbtestv', 'Einbürgerungstestverordnung')} /> und als amtliches Werk nach § 5 des Urheberrechtsgesetzes frei. Die auf gesetze-im-internet.de veröffentlichte Fassung der Anlage nennt bei den Fragen 72 (Bundeskanzler) und 73 (größte Fraktionen) noch den Stand vor der Bundestagswahl 2025; wir geben die neuere Fassung des BAMF wieder.</p>
+    <p>{bilder} Fragen zeigen in der Prüfung ein Bild. Die Abbildungen des Katalogs, darunter Wappen, Fotos und Karten, übernehmen wir nicht; wir beschreiben, was sie zeigen, damit die Frage ohne Bild lösbar bleibt. Die englischen Übersetzungen sind unsere eigenen.</p>
+    <h2>Die Lösungen</h2>
+    <p>Das BAMF veröffentlicht die Lösungen nur in seinem Online-Übungstest, nicht als Liste. Jede Lösung auf dieser Seite ist von Radif Partners an einer Primärquelle festgemacht worden, etwa am Grundgesetz, an einer Landesverfassung, an einem Wahlgesetz oder an amtlichen Angaben, und in einer zweiten Durchsicht bestätigt. Weicht eine Lösung vom amtlichen Übungstest ab, gilt der amtliche Test; melden Sie uns die Abweichung.</p>
+    <h2>Die Probeprüfung</h2>
+    <p>Nach § 1 EinbTestV besteht der Test aus {T.fragen} Fragen, davon {T.landFragen} zum Bundesland, mit {T.minuten} Minuten Zeit; bestanden ist er mit {T.bestehen} richtigen Antworten. Unsere Probeprüfung zieht {T.fragen - T.landFragen} allgemeine und {T.landFragen} Landesfragen ohne Wiederholung und mischt sie. Der erste Bogen ist fest, damit jede Seite gleich aussieht; jeder Klick auf „Neue Probeprüfung“ zieht zufällig neu. Die Antworten erscheinen in der Reihenfolge des Katalogs.</p>
+    <h2>Der Rechner für den Antrag</h2>
+    <ul>
+      <li><strong>Frist</strong>: {E.jahre} Jahre ab Beginn des rechtmäßigen Aufenthalts (<Fragment set:html={s('stag10', '§ 10 StAG')} />); bei Ehe mit einer oder einem Deutschen {E.ehegatteJahre} Jahre Aufenthalt und {E.eheJahre} Jahre Ehe, der spätere Termin zählt (<Fragment set:html={s('stag9', '§ 9 StAG')} />). Der Rechner nimmt den früheren der beiden Wege.</li>
+      <li><strong>Auslandsaufenthalte</strong>: bis {E.abwesenheitMonate} Monate unschädlich; nach längerer Abwesenheit geben Sie die Rückkehr als Beginn ein und angerechnete Monate gesondert, höchstens {E.anrechnungJahre * 12} (<Fragment set:html={s('stag12b', '§ 12b StAG')} />).</li>
+      <li><strong>Titel</strong>: Studium, Ausbildung, Sprachkurs, Arbeitsplatzsuche und die Erlaubnisse nach § 25 Abs. 3 bis 5 AufenthG schließen aus, ebenso Duldung und Aufenthaltsgestattung.</li>
+      <li><strong>Lebensunterhalt</strong>: Bürgergeld oder Sozialhilfe schließen aus, außer bei {E.vollzeitMonate} Monaten Vollzeit in den letzten {E.vollzeitVon} Monaten und den weiteren Ausnahmen des Gesetzes.</li>
+      <li><strong>Strafen</strong>: bis {E.geldstrafeTagessaetze} Tagessätze oder {E.bewaehrungMonate} Monate auf Bewährung bleiben außer Betracht (<Fragment set:html={s('stag12a', '§ 12a StAG')} />).</li>
+      <li><strong>Sprache und Test</strong>: fehlen sie, sind sie „noch nachzuweisen“, verschieben aber den Monat nicht, weil beide vor Fristende erledigt werden können.</li>
+    </ul>
+    <p>„Heute“ ist im Rechner der Monat unserer letzten Gesetzeslesung, nicht die Uhr Ihres Geräts, damit alle Besucher dasselbe Ergebnis sehen.</p>
+    <h2>Gebühren, Niederlassungserlaubnis, Blaue Karte</h2>
+    <p>Gebühren nach <Fragment set:html={s('stag38', '§ 38 StAG')} />: {G.einbuergerung} € pro Person, {G.kind} € pro miteingebürgertem Kind ohne Einkommen, dazu {T.gebuehr} € je Test. Die Fristen der Niederlassungserlaubnis folgen <Fragment set:html={s('aufenthg9', '§ 9')} />, <Fragment set:html={s('aufenthg18c', '§ 18c')} />, <Fragment set:html={s('aufenthg26', '§ 26')} /> und <Fragment set:html={s('aufenthg28', '§ 28 AufenthG')} />. Die Gehaltsgrenzen der Blauen Karte sind {P.blau.regel * 100} und {String(Math.round(P.blau.engpass * 1000) / 10).replace('.', ',')} Prozent der <Fragment set:html={s('drv-bbg', 'Beitragsbemessungsgrenze der Rentenversicherung')} /> von {P.blau.bbg.toLocaleString('de-DE')} € für {P.blau.jahr}.</p>
+    <h2>Was wir weglassen</h2>
+    <p>Bearbeitungszeiten der Behörden: Es gibt keine einheitlichen amtlichen Zahlen, und einzelne Erfahrungsberichte sind keine Grundlage. Preise von Sprachprüfungen, Übersetzungen und Urkunden: Sie hängen vom Anbieter ab. Das Recht anderer Staaten, etwa zum Verlust der bisherigen Staatsangehörigkeit.</p>
+    <h2>Prüfung und Aktualisierung</h2>
+    <p>Automatische Tests prüfen jede Frist, jede Gebühr, die Ziehung der Probeprüfung und den Aufbau des Katalogs ({P.katalog.allgemein} plus {P.katalog.proLand} je Land, vier Antworten, genau eine richtig). Ein Skript vergleicht regelmäßig die Katalogdatei des BAMF und die Gesetzestexte mit unserem Stand und meldet jede Änderung, bevor eine neue Fassung online geht.</p>
+  </article>
+</PageLayout>

@@ -1,0 +1,233 @@
+{
+ "_lisezmoi": "Tous les paramètres légaux du site vivent ici, jamais en dur dans le code (RECETTE-SITE.md §4). Chaque valeur est relue sur la source citée ; retrieved_at = jour de la relecture.",
+ "year": 2026,
+ "retrieved_at": "2026-10-22",
+ "valid_from": "2026-01-01",
+ "valid_to": "2026-12-31",
+ "katalog": {
+  "stand": "2025-05-07",
+  "fragen": 310,
+  "allgemein": 300,
+  "proLand": 10,
+  "retrieved_at": "2026-10-21",
+  "source": "bamf-katalog"
+ },
+ "test": {
+  "fragen": 33,
+  "landFragen": 3,
+  "bestehen": 17,
+  "minuten": 60,
+  "gebuehr": 25,
+  "source": "einbtestv"
+ },
+ "einb": {
+  "jahre": 5,
+  "ehegatteJahre": 3,
+  "eheJahre": 2,
+  "eheJahreVerkuerzt": 3,
+  "abwesenheitMonate": 6,
+  "anrechnungJahre": 3,
+  "geldstrafeTagessaetze": 90,
+  "bewaehrungMonate": 3,
+  "vollzeitMonate": 20,
+  "vollzeitVon": 24,
+  "sprache": "B1",
+  "kindSpracheBis": 16,
+  "turbo": {
+   "jahre": 3,
+   "aufgehoben": "2025-10-30",
+   "source": "freising"
+  },
+  "source": "stag10"
+ },
+ "gebuehr": {
+  "einbuergerung": 255,
+  "kind": 51,
+  "feststellung": 51,
+  "bescheinigungMin": 5,
+  "bescheinigungMax": 51,
+  "ablehnungMin": 25,
+  "source": "stag38"
+ },
+ "ne": {
+  "jahre": 5,
+  "beitraege": 60,
+  "fachkraftJahre": 3,
+  "fachkraftBeitraege": 36,
+  "fachkraftInlandJahre": 2,
+  "fachkraftInlandBeitraege": 24,
+  "blauMonate": 27,
+  "blauMonateB1": 21,
+  "schutzJahre": 5,
+  "schutzJahreC1": 3,
+  "ehegatteDeutschJahre": 3,
+  "gebuehrHq": 147,
+  "gebuehrSelbst": 124,
+  "gebuehrSonst": 113,
+  "source": "aufenthg9"
+ },
+ "blau": {
+  "bbg": 101400,
+  "regel": 0.5,
+  "engpass": 0.453,
+  "jahr": 2026,
+  "source": "aufenthg18g",
+  "bbgSource": "drv-bbg"
+ },
+ "sources": {
+  "bamf-katalog": {
+   "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html",
+   "label": {
+    "de": "BAMF: Gesamtfragenkatalog zum Test „Leben in Deutschland“ und zum Einbürgerungstest (Stand 7. Mai 2025)",
+    "en": "BAMF: complete question catalogue for the “Leben in Deutschland” test and the citizenship test (as of 7 May 2025)"
+   }
+  },
+  "einbtestv": {
+   "url": "https://www.gesetze-im-internet.de/einbtestv/",
+   "label": {
+    "de": "Einbürgerungstestverordnung (EinbTestV), § 1, § 2 und Anlage 1",
+    "en": "Citizenship Test Ordinance (EinbTestV), sections 1 and 2 and annex 1"
+   }
+  },
+  "stag10": {
+   "url": "https://www.gesetze-im-internet.de/stag/__10.html",
+   "label": {
+    "de": "§ 10 Staatsangehörigkeitsgesetz: Anspruchseinbürgerung",
+    "en": "Section 10 of the Nationality Act (StAG): naturalisation by entitlement"
+   }
+  },
+  "stag9": {
+   "url": "https://www.gesetze-im-internet.de/stag/__9.html",
+   "label": {
+    "de": "§ 9 StAG: Einbürgerung von Ehegatten Deutscher",
+    "en": "Section 9 StAG: naturalisation of spouses of Germans"
+   }
+  },
+  "stag12a": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12a.html",
+   "label": {
+    "de": "§ 12a StAG: Verurteilungen, die außer Betracht bleiben",
+    "en": "Section 12a StAG: convictions that are disregarded"
+   }
+  },
+  "stag12b": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12b.html",
+   "label": {
+    "de": "§ 12b StAG: Auslandsaufenthalte und Unterbrechungen",
+    "en": "Section 12b StAG: stays abroad and interruptions"
+   }
+  },
+  "stag11": {
+   "url": "https://www.gesetze-im-internet.de/stag/__11.html",
+   "label": {
+    "de": "§ 11 StAG: Ausschlussgründe",
+    "en": "Section 11 StAG: grounds for exclusion"
+   }
+  },
+  "stag38": {
+   "url": "https://www.gesetze-im-internet.de/stag/__38.html",
+   "label": {
+    "de": "§ 38 StAG: Gebühren in Staatsangehörigkeitssachen",
+    "en": "Section 38 StAG: fees in nationality matters"
+   }
+  },
+  "stag4": {
+   "url": "https://www.gesetze-im-internet.de/stag/__4.html",
+   "label": {
+    "de": "§ 4 StAG: Erwerb durch Geburt",
+    "en": "Section 4 StAG: acquisition by birth"
+   }
+  },
+  "stag12": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12.html",
+   "label": {
+    "de": "§ 12 StAG (weggefallen): frühere Regeln zur Hinnahme von Mehrstaatigkeit",
+    "en": "Section 12 StAG (repealed): former rules on accepting dual nationality"
+   }
+  },
+  "aufenthg9": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__9.html",
+   "label": {
+    "de": "§ 9 Aufenthaltsgesetz: Niederlassungserlaubnis",
+    "en": "Section 9 Residence Act (AufenthG): settlement permit"
+   }
+  },
+  "aufenthg18c": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18c.html",
+   "label": {
+    "de": "§ 18c AufenthG: Niederlassungserlaubnis für Fachkräfte",
+    "en": "Section 18c AufenthG: settlement permit for skilled workers"
+   }
+  },
+  "aufenthg18g": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+   "label": {
+    "de": "§ 18g AufenthG: Blaue Karte EU",
+    "en": "Section 18g AufenthG: EU Blue Card"
+   }
+  },
+  "aufenthg26": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__26.html",
+   "label": {
+    "de": "§ 26 AufenthG: Niederlassungserlaubnis für Schutzberechtigte",
+    "en": "Section 26 AufenthG: settlement permit for protected persons"
+   }
+  },
+  "aufenthg28": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__28.html",
+   "label": {
+    "de": "§ 28 AufenthG: Familiennachzug zu Deutschen",
+    "en": "Section 28 AufenthG: family reunification with Germans"
+   }
+  },
+  "aufenthv44": {
+   "url": "https://www.gesetze-im-internet.de/aufenthv/__44.html",
+   "label": {
+    "de": "§ 44 Aufenthaltsverordnung: Gebühren für die Niederlassungserlaubnis",
+    "en": "Section 44 Residence Ordinance (AufenthV): settlement permit fees"
+   }
+  },
+  "drv-bbg": {
+   "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2025/250910-sv-rechengroessen-vo-2026.html",
+   "label": {
+    "de": "Deutsche Rentenversicherung: Rechengrößen der Sozialversicherung 2026",
+    "en": "German Pension Insurance: social insurance reference values 2026"
+   }
+  },
+  "freising": {
+   "url": "https://www.kreis-freising.de/fileadmin/user_upload/Aemter/Personenstand_und_Staatsangehoerigkeit/Voraussetzungen_f%C3%BCr_die_Einb%C3%BCrgerung__Stand_01.01.2026_.pdf",
+   "label": {
+    "de": "Landratsamt Freising: Voraussetzungen für die Einbürgerung (Stand 1. Januar 2026)",
+    "en": "Freising district office: requirements for naturalisation (as of 1 January 2026)"
+   }
+  },
+  "berlin-lea": {
+   "url": "https://service.berlin.de/dienstleistung/318998/",
+   "label": {
+    "de": "Service Berlin: Einbürgerung beim Landesamt für Einwanderung",
+    "en": "Service Berlin: naturalisation at the State Office for Immigration"
+   }
+  },
+  "stag30": {
+   "url": "https://www.gesetze-im-internet.de/stag/__30.html",
+   "label": {
+    "de": "§ 30 StAG: Feststellung der Staatsangehörigkeit und Staatsangehörigkeitsausweis",
+    "en": "Section 30 StAG: determination of nationality and certificate of nationality"
+   }
+  },
+  "stag25": {
+   "url": "https://www.gesetze-im-internet.de/stag/__25.html",
+   "label": {
+    "de": "§ 25 StAG (weggefallen): früherer Verlust beim Erwerb einer ausländischen Staatsangehörigkeit",
+    "en": "Section 25 StAG (repealed): former loss on acquiring a foreign nationality"
+   }
+  },
+  "stag29": {
+   "url": "https://www.gesetze-im-internet.de/stag/__29.html",
+   "label": {
+    "de": "§ 29 StAG (weggefallen): frühere Optionspflicht",
+    "en": "Section 29 StAG (repealed): former duty to choose a nationality"
+   }
+  }
+ }
+}

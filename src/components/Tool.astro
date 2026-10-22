@@ -1,0 +1,12 @@
+---
+/** Le simulateur d'une page : un simulateur déclaratif de tool-specs.ts, ou l'entraîneur du test. */
+import SpecTool from './calc/SpecTool';
+import Trainer from './calc/Trainer';
+import { route } from '../i18n/routes';
+import type { Lang } from '../lib/format';
+interface Props { kind: string; lang: Lang; arg?: Record<string, number | string>; idPrefix?: string }
+const { kind, lang, arg, idPrefix = 't' } = Astro.props;
+---
+{kind === 'probe' || kind === 'katalog'
+  ? <Trainer client:load lang={lang} mode={kind} land={arg?.land ? String(arg.land) : undefined} auswahl={arg?.auswahl ? String(arg.auswahl) : undefined} idPrefix={idPrefix} />
+  : <SpecTool client:load kind={kind} lang={lang} arg={arg ? JSON.stringify(arg) : undefined} methodHref={route('method', lang)} idPrefix={idPrefix} />}

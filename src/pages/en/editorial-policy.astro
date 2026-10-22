@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, REVIEW_CYCLE_MONTHS, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: sources and checks`} description="Where the questions, answers, periods and fees come from, how we work out answers without an official key, when we check and what happens when something is wrong." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial policy and corrections</h1>
+    <p>Learning a wrong answer or planning around an outdated deadline costs time and money. This page says where everything comes from and what happens when something is wrong.</p>
+    <h2>Responsibility</h2><p>{AUTHOR_NAME} is responsible for the content and calculators. Contact: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Primary sources only</h2>
+    <ul>
+      <li><strong>Questions</strong>: BAMF’s complete question catalogue and annex 1 to the Citizenship Test Ordinance;</li>
+      <li><strong>Answers</strong>: the Basic Law, state constitutions, electoral laws and official federal and state records;</li>
+      <li><strong>Periods and fees</strong>: the Nationality Act, Residence Act, Residence Ordinance and Citizenship Test Ordinance on gesetze-im-internet.de, plus the German Pension Insurance’s reference values and official fact sheets.</li>
+    </ul>
+    <p>Other practice sites, forums and guides are not sources, not even for answers.</p>
+    <h2>Answers without an official key</h2><p>BAMF publishes the catalogue without answers. Each answer is therefore tied to a primary source and confirmed by a second review. Where a question depends on current politics, we follow the latest BAMF catalogue and give its date. The English translations are ours and carry no official weight.</p>
+    <h2>Not yet published</h2><p>Anything only announced or in draft is marked “not yet published”. The calculator only uses a change once it has been enacted.</p>
+    <h2>Schedule</h2><p>A script regularly compares BAMF’s catalogue and the legal texts with our version and flags every change. A full review at least every {REVIEW_CYCLE_MONTHS} months and after any change to the Nationality Act or the catalogue.</p>
+    <h2>Corrections</h2>
+    <ol><li>Check against the primary source.</li><li>Fix in the data or parameter file and add a test.</li><li>New date on every page.</li></ol>
+    <h2>Independence</h2><p>No money from authorities, language schools, test centres or law firms. No course recommendations, no forms, no callbacks.</p>
+    <p>See also the <a href={route('method', lang)}>method</a>. Version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

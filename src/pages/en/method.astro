@@ -1,0 +1,46 @@
+---
+/** Method: catalogue, answers, mock exam, calculator, limits. Every figure from params-2026.json. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { srcLink } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+const path = route('method', lang);
+const P = K.P, T = P.test, E = P.einb, G = P.gebuehr;
+const title = 'Passkompass Method 2026: Catalogue, Answers, Calculators';
+const description = 'How Passkompass works: the official BAMF catalogue, answers we worked out ourselves, how the mock exam is drawn, and periods and fees under the 2026 law.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const d = (x: string) => displayDate(x, 'en-GB');
+const bilder = K.FRAGEN.filter((f) => f.b).length;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'Method', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>How Passkompass works</h1>
+    <p>Everything on this site comes from two kinds of source: the official question catalogue and the text of the law. Nothing you enter in the mock exam or the calculator leaves your browser. Laws last read on {d(P.retrieved_at)}.</p>
+    <h2>The question catalogue</h2>
+    <p>The basis is <Fragment set:html={s('bamf-katalog', 'BAMF’s complete question catalogue')} />, dated {d(P.katalog.stand)}: {P.katalog.allgemein} general questions and {P.katalog.proLand} for each of the 16 states, {P.katalog.fragen} questions a candidate can face. The catalogue is annex 1 to the <Fragment set:html={s('einbtestv', 'Citizenship Test Ordinance')} />, an official work that is free under section 5 of the German Copyright Act. The version of the annex published on gesetze-im-internet.de still reflects the situation before the 2025 federal election in questions 72 (chancellor) and 73 (largest groups); we reproduce BAMF’s newer version.</p>
+    <p>{bilder} questions show a picture in the exam. We do not reproduce the catalogue’s images, such as coats of arms, photos and maps; we describe what they show so the question can be answered without the picture. The English translations are our own.</p>
+    <h2>The answers</h2>
+    <p>BAMF only shows the answers in its online practice test, not as a list. Radif Partners tied every answer on this site to a primary source, such as the Basic Law, a state constitution, an electoral law or official records, and confirmed it in a second review. If an answer differs from the official practice test, the official test prevails; please tell us.</p>
+    <h2>The mock exam</h2>
+    <p>Under section 1 of the ordinance the test has {T.fragen} questions, {T.landFragen} of them about the state, with {T.minuten} minutes; you pass with {T.bestehen} correct answers. Our mock exam draws {T.fragen - T.landFragen} general and {T.landFragen} state questions without repeats and shuffles them. The first paper is fixed so every page looks the same; each click on “New mock test” draws a new random one. Answers appear in catalogue order.</p>
+    <h2>The application calculator</h2>
+    <ul>
+      <li><strong>Period</strong>: {E.jahre} years from the start of lawful residence (<Fragment set:html={s('stag10', 'section 10 StAG')} />); if married to a German, {E.ehegatteJahre} years of residence and {E.eheJahre} years of marriage, whichever comes later (<Fragment set:html={s('stag9', 'section 9 StAG')} />). The calculator takes the earlier of the two routes.</li>
+      <li><strong>Time abroad</strong>: up to {E.abwesenheitMonate} months does no harm; after a longer absence you enter your return as the start and any credited months separately, {E.anrechnungJahre * 12} at most (<Fragment set:html={s('stag12b', 'section 12b StAG')} />).</li>
+      <li><strong>Titles</strong>: study, training, language course, job seeking and permits under section 25(3) to (5) of the Residence Act exclude you, as do a Duldung and an asylum-seeker permit.</li>
+      <li><strong>Livelihood</strong>: basic income support or social assistance excludes you, except after {E.vollzeitMonate} months of full-time work in the last {E.vollzeitVon} and the other statutory exceptions.</li>
+      <li><strong>Convictions</strong>: up to {E.geldstrafeTagessaetze} day-rates or {E.bewaehrungMonate} months suspended are disregarded (<Fragment set:html={s('stag12a', 'section 12a StAG')} />).</li>
+      <li><strong>Language and test</strong>: if missing they are “still to prove” but do not move the month, since both can be done before the period ends.</li>
+    </ul>
+    <p>“Today” in the calculator is the month of our latest reading of the law, not your device’s clock, so every visitor gets the same result.</p>
+    <h2>Fees, settlement permit, Blue Card</h2>
+    <p>Fees under <Fragment set:html={s('stag38', 'section 38 StAG')} />: €{G.einbuergerung} per person, €{G.kind} per child without income naturalised with a parent, plus €{T.gebuehr} per test. Settlement permit periods follow <Fragment set:html={s('aufenthg9', 'section 9')} />, <Fragment set:html={s('aufenthg18c', '18c')} />, <Fragment set:html={s('aufenthg26', '26')} /> and <Fragment set:html={s('aufenthg28', '28 of the Residence Act')} />. Blue Card thresholds are {P.blau.regel * 100} and {Math.round(P.blau.engpass * 1000) / 10} percent of the <Fragment set:html={s('drv-bbg', 'pension contribution ceiling')} /> of €{P.blau.bbg.toLocaleString('en-GB')} for {P.blau.jahr}.</p>
+    <h2>What we leave out</h2>
+    <p>Processing times: there are no uniform official figures, and individual reports are no basis. Prices of language exams, translations and documents: they depend on the provider. The law of other countries, for example on losing your previous nationality.</p>
+    <h2>Checks and updates</h2>
+    <p>Automated tests check every period, every fee, how the mock exam is drawn and the structure of the catalogue ({P.katalog.allgemein} plus {P.katalog.proLand} per state, four answers, exactly one correct). A script regularly compares BAMF’s catalogue file and the legal texts with our version and flags any change before a new version goes online.</p>
+  </article>
+</PageLayout>

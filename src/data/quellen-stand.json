@@ -1,0 +1,118 @@
+{
+ "_lisezmoi": "Empreintes des sources officielles, écrites par scripts/update-data.py. Ne pas éditer à la main.",
+ "geprueft_am": "2026-10-22",
+ "quellen": {
+  "bamf-katalog": {
+   "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html",
+   "sha256": "b0c06d65ce5be74d14682be27bb538697278fcb2775ec777ecc07092730c8f4a",
+   "zeichen": 94293,
+   "pdf": "https://www.BAMF.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.pdf?__blob=publicationFile&v=23",
+   "stand": "2025-05-07"
+  },
+  "einbtestv": {
+   "url": "https://www.gesetze-im-internet.de/einbtestv/",
+   "sha256": "af3087d0e9f13f01d57a09d5ec886c9b8a64100f6810b2de84b574d79adff7bf",
+   "zeichen": 748
+  },
+  "stag10": {
+   "url": "https://www.gesetze-im-internet.de/stag/__10.html",
+   "sha256": "2a4f71ff4aaa2acd59a315fc23cd7df509f8c597fdadc5aa71a36648ee41de4e",
+   "zeichen": 6506
+  },
+  "stag9": {
+   "url": "https://www.gesetze-im-internet.de/stag/__9.html",
+   "sha256": "c901515b54a69035532ecaf1b2b3866b5bb277ecaa13fbdbabb7fb43bca1c83e",
+   "zeichen": 1341
+  },
+  "stag12a": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12a.html",
+   "sha256": "f897172e38573667155b94c561252b071619f5ca508d6a0226b9cfe4caf2c881",
+   "zeichen": 2346
+  },
+  "stag12b": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12b.html",
+   "sha256": "999b50c703aa3cbd617352293950b09f67266e6da5f4dcb7851059558b899406",
+   "zeichen": 2123
+  },
+  "stag11": {
+   "url": "https://www.gesetze-im-internet.de/stag/__11.html",
+   "sha256": "faccd3a8424f39fde8708e922223fdbd82315e44ab41099da1ba30bea2bf5876",
+   "zeichen": 1773
+  },
+  "stag38": {
+   "url": "https://www.gesetze-im-internet.de/stag/__38.html",
+   "sha256": "543d59ceb190384a32c99158c4f4862a2994c708c82a3bd8e16c4d6564124813",
+   "zeichen": 1942
+  },
+  "stag4": {
+   "url": "https://www.gesetze-im-internet.de/stag/__4.html",
+   "sha256": "f2b74ed5d4ce7bd3020b19aba39063e3616afc1aa5c086adf804cebac742e208",
+   "zeichen": 3151
+  },
+  "stag12": {
+   "url": "https://www.gesetze-im-internet.de/stag/__12.html",
+   "sha256": "1cbc60f3381b14ae27ec96c9a0e29ff28dd3d95b0d30251eb0d9f56bc6ab27a1",
+   "zeichen": 108
+  },
+  "aufenthg9": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__9.html",
+   "sha256": "26ee787985e03db07cc2407726bf5c31ea1ee6d25a2afcabb79e4a2ba26926df",
+   "zeichen": 4444
+  },
+  "aufenthg18c": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18c.html",
+   "sha256": "dbb053c1cdc73d7643c9bee03a9b97d4a37b0bf924e38cd3dd483b6ab8fe0cd6",
+   "zeichen": 2974
+  },
+  "aufenthg18g": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__18g.html",
+   "sha256": "88a861be84367d458ec29890c332ca59612d52f8b0caae79dbb33ba95c85ec36",
+   "zeichen": 5369
+  },
+  "aufenthg26": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__26.html",
+   "sha256": "bad648f4f64e1a1804441c18b51acb1e883960961e76e2a82aea9994789887c3",
+   "zeichen": 4174
+  },
+  "aufenthg28": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__28.html",
+   "sha256": "7d5578ac6a977103fe64c3b4e843f33b735482a4c80e815165aa85bf807b2dda",
+   "zeichen": 2183
+  },
+  "aufenthv44": {
+   "url": "https://www.gesetze-im-internet.de/aufenthv/__44.html",
+   "sha256": "0c2136919b85649afdb2bc53e2b5842a8279c58704a5aa3c272617c9775be844",
+   "zeichen": 513
+  },
+  "drv-bbg": {
+   "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Ueber-uns-und-Presse/Presse/Meldungen/2025/250910-sv-rechengroessen-vo-2026.html",
+   "sha256": "9277d5521efdf7047abf7dc9b8f3729775db29477cecc2315a247409c9fff138",
+   "zeichen": 2131
+  },
+  "freising": {
+   "url": "https://www.kreis-freising.de/fileadmin/user_upload/Aemter/Personenstand_und_Staatsangehoerigkeit/Voraussetzungen_f%C3%BCr_die_Einb%C3%BCrgerung__Stand_01.01.2026_.pdf",
+   "sha256": "3a758ebe024d2fc4f8899360b337e57e29ba49ccd81900091414bf255788ee3d",
+   "zeichen": 4331
+  },
+  "berlin-lea": {
+   "url": "https://service.berlin.de/dienstleistung/318998/",
+   "sha256": "6f56716f7a952b61e8c41af9349b5d39eaead87baccb310e1f7656b8af51422a",
+   "zeichen": 19050
+  },
+  "stag30": {
+   "url": "https://www.gesetze-im-internet.de/stag/__30.html",
+   "sha256": "aa4c6ea8aace427d47dd2e23105d666bf6ac6431a395c57aeb875d26c7e32877",
+   "zeichen": 1704
+  },
+  "stag25": {
+   "url": "https://www.gesetze-im-internet.de/stag/__25.html",
+   "sha256": "ae70891bfee2258f066a69927f44605eedf2068c808a017a25a6fbbcca182f2d",
+   "zeichen": 108
+  },
+  "stag29": {
+   "url": "https://www.gesetze-im-internet.de/stag/__29.html",
+   "sha256": "58805c1131847fa089e172cd0bcb039a7ab17b2e178fe1a25bc255b0df6aa2f5",
+   "zeichen": 108
+  }
+ }
+}

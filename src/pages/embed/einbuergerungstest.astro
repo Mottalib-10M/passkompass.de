@@ -1,0 +1,22 @@
+---
+/** Page à intégrer (iframe) : la Probeprüfung seule. noindex, hors sitemap (astro.config). */
+import '../../styles/global.css';
+import Tool from '../../components/Tool.astro';
+import { SITE_URL, SITE_NAMES, LANG_TAGS } from '../../data/site-config';
+const lang = 'de';
+---
+<!doctype html>
+<html lang={LANG_TAGS[lang]}>
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probeprüfung Einbürgerungstest (zum Einbinden)</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={`${SITE_URL}/de/`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  </head>
+  <body class="bg-white p-2 text-navy-900">
+    <main><Tool kind="probe" lang={lang} arg={{ land: 'BE' }} idPrefix="embed" /></main>
+    <p class="mt-2 text-center text-xs text-navy-600"><a href={`${SITE_URL}/de/`} target="_blank" rel="noopener" class="underline">{SITE_NAMES[lang]}</a> · Fragen aus dem amtlichen Katalog des BAMF, Lösungen von Radif Partners · kein Angebot des BAMF</p>
+  </body>
+</html>

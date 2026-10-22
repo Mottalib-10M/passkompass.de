@@ -1,0 +1,20 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'de';
+const description = 'Schreiben Sie uns, wenn eine Lösung im Fragenkatalog falsch ist, sich eine Frist oder Gebühr geändert hat oder Sie den Übungstest auf Ihrer Seite einbinden möchten.';
+---
+<PageLayout title={`Kontakt zu ${SITE_NAMES[lang]}: Fehler melden, Test einbinden`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Kontakt', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Kontakt' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Kontakt</h1>
+    <p>E-Mail: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Antwort meist innerhalb einer Woche.</p>
+    <h2>Eine Lösung scheint falsch</h2>
+    <p>Nennen Sie die Nummer der Frage, etwa 72 oder „Bayern 4“, und die Antwort, die Sie für richtig halten, am besten mit Quelle. Wir prüfen an Grundgesetz, Landesverfassung oder amtlicher Angabe und korrigieren innerhalb weniger Tage. Maßgeblich bleibt der amtliche Katalog des BAMF.</p>
+    <h2>Test oder Rechner einbinden</h2>
+    <p>Integrationskursträger, Beratungsstellen und Vereine können die Probeprüfung und den Rechner kostenlos einbinden: <a href={route('widget', lang)}>Einbinden</a>.</p>
+    <h2>Was wir nicht leisten</h2>
+    <p>Keine Beratung im Einzelfall, keine Prüfung von Bescheiden, keine Antragstellung und keine Vermittlung von Prüfungsterminen. Dafür sind die Einbürgerungsbehörden, die Migrationsberatung und die Prüfstellen da.</p>
+  </div>
+</PageLayout>

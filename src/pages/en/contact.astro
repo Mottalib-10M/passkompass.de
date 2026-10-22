@@ -1,0 +1,20 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const description = 'Write to us if an answer in the question catalogue looks wrong, a period or fee has changed, or you want to embed the mock exam on your own website.';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: report an error, embed the test`} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path: route('contact', lang), lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We usually reply within a week.</p>
+    <h2>An answer looks wrong</h2>
+    <p>Give the question number, such as 72 or “Bavaria 4”, and the answer you think is right, ideally with a source. We check against the Basic Law, the state constitution or the official record and correct within a few days. BAMF’s official catalogue always prevails.</p>
+    <h2>Embedding the test or calculator</h2>
+    <p>Integration course providers, advice centres and associations can embed the mock exam and the calculator for free: <a href={route('widget', lang)}>embed</a>.</p>
+    <h2>What we do not do</h2>
+    <p>No individual advice, no review of decisions, no applications and no booking of test dates. Naturalisation authorities, migration advice services and test centres handle those.</p>
+  </div>
+</PageLayout>
