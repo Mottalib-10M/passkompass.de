@@ -2,7 +2,7 @@
  *  Les tests acceptent un lien vers ces ids pendant la rédaction ; « toutes les pages existent » échoue tant qu'il en manque. */
 export const LAND_IDS = ['BW', 'BY', 'BE', 'BB', 'HB', 'HH', 'HE', 'MV', 'NI', 'NW', 'RP', 'SL', 'SN', 'ST', 'SH', 'TH'].map((c) => `land-${c.toLowerCase()}`);
 export const PLANNED_GUIDES = [
-  'fragenkatalog', 'test-anmelden',
+  'fragenkatalog', 'test-anmelden', 'leben-in-deutschland',
   ...LAND_IDS,
   'voraussetzungen', 'kosten', 'beantragen', 'doppelte-staatsbuergerschaft', 'ehepartner', 'kinder', 'sprachnachweis', 'staatsangehoerigkeitsausweis',
   'niederlassungserlaubnis', 'blaue-karte',

@@ -14,7 +14,7 @@ export default defineGuide({
     nav: 'Kinder', card: `Geburt in Deutschland, Miteinbürgerung für ${G.kind} €, kein Test unter 16`,
     title: 'Einbürgerung Kinder 2026: Geburt, Miteinbürgerung, Kosten',
     description: `Einbürgerung von Kindern 2026: deutsch durch Geburt in Deutschland, Miteinbürgerung mit den Eltern für ${G.kind} €, kein Test unter 16 Jahren, Rechner für die Familie.`,
-    h1: 'Wie Kinder deutsch werden',
+    h1: 'Deutsche Staatsbürgerschaft durch Geburt und für Kinder',
     intro: `Viele Kinder sind schon mit der Geburt deutsch. Die anderen werden meist zusammen mit einem Elternteil eingebürgert, für ${G.kind} € statt ${G.einbuergerung} €.`,
     resume: `Ein Kind wird auf drei Wegen deutsch. Erstens durch Abstammung: Ist ein Elternteil bei der Geburt deutsch, ist es auch das Kind (§ 4 Abs. 1 StAG). Zweitens durch Geburt in Deutschland: Hat ein ausländischer Elternteil seit ${E.jahre} Jahren seinen rechtmäßigen gewöhnlichen Aufenthalt hier und ein unbefristetes Aufenthaltsrecht, wird das Kind mit der Geburt deutsch (§ 4 Abs. 3); das Standesamt trägt das im Geburtenregister ein. Drittens durch Miteinbürgerung: Minderjährige Kinder können nach § 10 Abs. 2 zusammen mit einem Elternteil eingebürgert werden, auch ohne eigene ${E.jahre} Jahre Aufenthalt. Kinder unter 16 Jahren brauchen keinen Einbürgerungstest und kein B1-Zertifikat; bei ihnen genügt eine altersgemäße Sprachentwicklung. Die Gebühr beträgt ${G.kind} € für ein Kind ohne eigenes Einkommen, das mit einem Elternteil eingebürgert wird; sonst ${G.einbuergerung} €. In allen drei Fällen dürfen die Kinder eine weitere Staatsangehörigkeit behalten, soweit das andere Land es zulässt.`,
     faqs: [

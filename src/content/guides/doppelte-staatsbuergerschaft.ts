@@ -12,15 +12,16 @@ export default defineGuide({
   de: {
     slug: 'doppelte-staatsbuergerschaft',
     nav: 'Doppelte Staatsbürgerschaft', card: 'Alte Staatsangehörigkeit behalten: was das deutsche Recht sagt',
-    title: 'Doppelte Staatsbürgerschaft 2026: was bei Einbürgerung gilt',
+    title: 'Doppelte Staatsbürgerschaft 2026: welche Länder, was gilt',
     description: 'Doppelte Staatsbürgerschaft 2026: Bei der Einbürgerung verlangt Deutschland nicht mehr die Aufgabe der alten Staatsangehörigkeit. Was das Herkunftsland regelt.',
-    h1: 'Doppelte Staatsbürgerschaft nach der Reform',
+    h1: 'Doppelte Staatsbürgerschaft in Deutschland nach der Reform',
     intro: 'Das deutsche Recht verlangt die Aufgabe der alten Staatsangehörigkeit nicht mehr. Ob Sie sie behalten, entscheidet Ihr Herkunftsland.',
     resume: `Seit der Reform des Staatsangehörigkeitsrechts von 2024 nimmt Deutschland Mehrstaatigkeit grundsätzlich hin. Die frühere Bedingung, die bisherige Staatsangehörigkeit aufzugeben oder zu verlieren, ist aus § 10 StAG gestrichen; die Ausnahmen dazu in § 12 sind deshalb ebenfalls weggefallen. Umgekehrt verlieren Deutsche ihre Staatsangehörigkeit nicht mehr automatisch, wenn sie eine ausländische annehmen, denn § 25 ist aufgehoben. Auch die Optionspflicht für in Deutschland geborene Kinder ausländischer Eltern nach § 29 gibt es nicht mehr. Für Sie bedeutet das: Die Einbürgerungsbehörde fragt nicht mehr nach einer Entlassungsurkunde oder Verzichtserklärung. Ob Sie Ihre bisherige Staatsangehörigkeit tatsächlich behalten, regelt aber allein das Recht Ihres Herkunftsstaates. Manche Staaten entziehen sie beim freiwilligen Erwerb einer anderen automatisch, andere verlangen eine Genehmigung oder Meldung. Klären Sie das vor dem Antrag mit dem Konsulat Ihres Landes.`,
     faqs: [
       { q: 'Muss ich meinen alten Pass bei der Einbürgerung abgeben?', a: 'Nach deutschem Recht nicht. Die Bedingung, die bisherige Staatsangehörigkeit aufzugeben, ist aus dem Staatsangehörigkeitsgesetz gestrichen. Ihr ausländischer Pass bleibt ein Dokument Ihres Herkunftsstaates; ob er gültig bleibt, entscheidet dieser Staat. Bei der Einreise nach Deutschland weisen Sie sich nach der Einbürgerung mit dem deutschen Pass oder Personalausweis aus.' },
       { q: 'Haben Doppelstaater in Deutschland andere Rechte?', a: 'Nein. In Deutschland sind Sie mit der Einbürgerung voll deutsch, mit Wahlrecht, Freizügigkeit in der EU und konsularischem Schutz im Ausland. Die zweite Staatsangehörigkeit spielt für deutsche Behörden in der Regel keine Rolle. Im Herkunftsstaat dagegen behandelt man Sie meist als eigenen Staatsangehörigen, auch beim Militärdienst oder bei Steuern.' },
       { q: 'Was gilt für Kinder mit zwei Staatsangehörigkeiten?', a: 'Kinder, die durch Geburt in Deutschland nach § 4 Abs. 3 StAG deutsch werden und von den Eltern eine andere Staatsangehörigkeit erben, behalten beide. Die frühere Pflicht, sich zwischen dem 18. und dem 23. Geburtstag zu entscheiden, ist mit der Aufhebung von § 29 weggefallen. Auch Kinder aus binationalen Ehen behalten beide Staatsangehörigkeiten.' },
+      { q: 'Mit welchen Ländern ist die doppelte Staatsbürgerschaft möglich?', a: 'Aus deutscher Sicht mit jedem Land: Seit der Reform verlangt das Staatsangehörigkeitsgesetz bei keiner Herkunft mehr, die alte Staatsangehörigkeit aufzugeben, ob EU-Staat, Türkei, Syrien oder ein anderes Land. Ob Sie Ihre bisherige behalten, entscheidet allein das Recht des anderen Staates. Fragen Sie dessen Konsulat schriftlich, bevor Sie die Urkunde entgegennehmen, und bewahren Sie die Antwort auf.' },
     ],
     body: (h) => `
 <h2>Was das Gesetz heute sagt</h2>
@@ -30,7 +31,7 @@ ${h.table(['Regel', 'Früher', 'Heute'], [
   ['Deutsche nehmen fremde Staatsangehörigkeit an', 'Verlust ohne Beibehaltungsgenehmigung', 'Kein Verlust nach deutschem Recht'],
   ['Kinder ausländischer Eltern, in Deutschland geboren', 'Optionspflicht in bestimmten Fällen', 'Beide Staatsangehörigkeiten bleiben'],
 ], 'Mehrstaatigkeit im deutschen Staatsangehörigkeitsrecht.', ['l', 'l', 'l'])}
-<h2>Die andere Seite: das Recht des Herkunftsstaats</h2>
+<h2>Welche Länder? Das Recht des Herkunftsstaats entscheidet</h2>
 <p>Das deutsche Gesetz entscheidet nur, ob Sie Deutsche oder Deutscher werden. Ob Sie dabei Ihre bisherige Staatsangehörigkeit verlieren, bestimmt der Staat, der sie verliehen hat. Die Regeln sind sehr verschieden: Manche Länder lassen Mehrstaatigkeit ohne Weiteres zu, andere knüpfen den Verlust automatisch an den freiwilligen Erwerb einer fremden Staatsangehörigkeit, wieder andere verlangen vorher eine Genehmigung. Wir geben dazu keine Länderliste, weil sich diese Regeln ändern und hier nicht verlässlich zu prüfen sind. Fragen Sie das Konsulat Ihres Landes schriftlich und bewahren Sie die Antwort auf.</p>
 <p>Wer seine alte Staatsangehörigkeit trotzdem aufgeben möchte, etwa um Pflichten im Herkunftsstaat zu beenden, kann das weiterhin tun. Es ist nur keine Voraussetzung mehr, und die Einbürgerungsbehörde stellt dafür keine Einbürgerungszusicherung mehr als Pflichtschritt aus.</p>
 <h2>Was bleibt Voraussetzung</h2>
@@ -51,6 +52,7 @@ ${h.mini('einb', { p: ['titel', 'jahr'], c: 'Alle Voraussetzungen prüfen' })}
       { q: 'Do I have to hand in my old passport when I naturalise?', a: 'Not under German law. The condition of giving up your previous nationality has been removed from the Nationality Act. Your foreign passport remains a document of your country of origin, and whether it stays valid is that country’s decision. After naturalising, you use your German passport or ID card when entering Germany.' },
       { q: 'Do dual citizens have different rights in Germany?', a: 'No. Once naturalised you are fully German, with the right to vote, free movement in the EU and consular protection abroad. German authorities generally disregard your second nationality. Your other country, on the other hand, usually treats you as its own national, including for military service or taxes.' },
       { q: 'What about children with two nationalities?', a: 'Children who become German by birth in Germany under section 4(3) StAG and inherit another nationality from their parents keep both. The former duty to choose between the ages of 18 and 23 ended with the repeal of section 29. Children of binational couples also keep both nationalities.' },
+      { q: 'Which countries allow dual citizenship with Germany?', a: 'From the German side, every country: since the reform the Nationality Act no longer asks anyone to give up their previous nationality, whether they come from an EU state, Turkey, Syria or anywhere else. Whether you keep your old one is decided only by the other country’s law. Ask its consulate in writing before you receive your certificate, and keep the reply.' },
     ],
     body: (h) => `
 <h2>What the law says today</h2>
@@ -60,7 +62,7 @@ ${h.table(['Rule', 'Before', 'Now'], [
   ['Germans acquiring a foreign nationality', 'Loss without a retention permit', 'No loss under German law'],
   ['Children of foreign parents born in Germany', 'Duty to choose in some cases', 'Both nationalities kept'],
 ], 'Multiple nationality in German nationality law.', ['l', 'l', 'l'])}
-<h2>The other side: your country’s law</h2>
+<h2>Which countries? Your country’s law decides</h2>
 <p>German law only decides whether you become German. Whether you lose your previous nationality in the process is decided by the state that granted it. The rules vary widely: some countries accept multiple nationality without conditions, others tie automatic loss to voluntarily acquiring a foreign nationality, others require permission first. We do not give a country list, because these rules change and cannot be verified reliably here. Ask your country’s consulate in writing and keep the reply.</p>
 <p>If you still want to give up your old nationality, for example to end obligations in that country, you can. It is simply no longer a requirement, and the naturalisation authority no longer issues an assurance of naturalisation as a mandatory step for it.</p>
 <h2>What is still required</h2>

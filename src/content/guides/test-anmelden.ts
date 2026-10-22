@@ -12,9 +12,9 @@ export default defineGuide({
   de: {
     slug: 'einbuergerungstest-anmelden',
     nav: 'Test anmelden', card: `Prüfstelle, Gebühr von ${T.gebuehr} €, Ablauf am Prüfungstag`,
-    title: 'Einbürgerungstest anmelden 2026: Ablauf, Gebühr, Ergebnis',
+    title: 'Einbürgerungstest anmelden 2026: Termin, Gebühr, Ergebnis',
     description: `Einbürgerungstest anmelden 2026: wo Sie sich anmelden, was die Prüfstelle verlangt, ${T.gebuehr} € Gebühr, Ablauf am Prüfungstag und wie das Ergebnis zu Ihnen kommt.`,
-    h1: 'Einbürgerungstest anmelden und ablegen',
+    h1: 'Einbürgerungstest mit Zertifikat: vor Ort statt online',
     intro: `Anmeldung bei einer zugelassenen Prüfstelle, ${T.gebuehr} € Gebühr, ${T.minuten} Minuten für ${T.fragen} Fragen. Vorher hier die Probeprüfung machen.`,
     resume: `Den Einbürgerungstest legen Sie nicht bei der Einbürgerungsbehörde ab, sondern bei einer Prüfstelle, die das Bundesamt für Migration und Flüchtlinge dafür zugelassen hat. Meist ist das eine Volkshochschule oder ein Träger von Integrationskursen. Sie melden sich dort an, zahlen nach § 2 der Einbürgerungstestverordnung eine Gebühr von ${T.gebuehr} € und bekommen einen Termin. Am Prüfungstag zeigen Sie ein gültiges Ausweisdokument, beantworten unter Aufsicht ${T.fragen} Fragen in ${T.minuten} Minuten und kreuzen auf einem Bogen an. Mit mindestens ${T.bestehen} richtigen Antworten ist der Test bestanden. Die Auswertung übernimmt das BAMF, das Ihnen eine Bescheinigung schickt, die Sie dem Einbürgerungsantrag beilegen. Wer nicht besteht, kann den Test so oft wiederholen wie nötig; jede Wiederholung kostet die Gebühr erneut. Eine Probeprüfung vor der Anmeldung zeigt, ob Sie bereit sind.`,
     faqs: [
@@ -22,6 +22,7 @@ export default defineGuide({
       { q: 'Wie oft darf ich den Einbürgerungstest wiederholen?', a: `Die Verordnung begrenzt die Zahl der Versuche nicht. Sie können sich nach einem nicht bestandenen Test erneut anmelden, zahlen dann aber wieder ${T.gebuehr} €. Sinnvoll ist eine Pause, in der Sie gezielt die Fragen lernen, die beim ersten Versuch falsch waren; die Liste „Ihre Fehler“ in der Probeprüfung hilft dabei.` },
       { q: 'Was muss ich zum Einbürgerungstest mitbringen?', a: 'Ein gültiges amtliches Ausweisdokument mit Lichtbild, etwa Reisepass, Aufenthaltstitel oder Ausweisersatz, und die Anmeldebestätigung, falls die Prüfstelle eine verschickt hat. Handy und Unterlagen bleiben während der Prüfung weggeschlossen. Einen Stift stellt meist die Prüfstelle; fragen Sie bei der Anmeldung nach, was sie im Einzelnen verlangt.' },
       { q: 'Wie lange dauert es bis zum Ergebnis?', a: 'Die Bögen gehen an das BAMF, das sie auswertet und die Bescheinigung per Post verschickt. Eine einheitliche Frist veröffentlicht das BAMF nicht; die Dauer hängt von der Prüfstelle und vom Versand ab. Wenn Ihre Einbürgerungsbehörde auf die Bescheinigung wartet, können Sie den Antrag oft schon stellen und den Nachweis nachreichen.' },
+      { q: 'Kann ich den Einbürgerungstest online mit Zertifikat machen?', a: 'Nein. Nach § 1 Abs. 3 der Einbürgerungstestverordnung ist der Test nur bestanden, wenn Sie ihn unter Aufsicht ablegen, und nur dann stellt das BAMF die Bescheinigung aus. Online gibt es Übungstests, auch beim BAMF selbst und auf dieser Seite, aber keiner davon ersetzt die Prüfung vor Ort. Angebote, die ein Zertifikat für einen Online-Test versprechen, bringen Ihnen bei der Behörde nichts.' },
     ],
     body: (h) => `
 <h2>Schritt für Schritt zur Prüfung</h2>
@@ -56,6 +57,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'test'], c: 'Alle Voraussetzungen prüfe
       { q: 'How many times can I retake the citizenship test?', a: `The ordinance sets no limit on attempts. After a failed test you can register again, but you pay €${T.gebuehr} each time. It makes sense to take a break and work on the questions you got wrong the first time; the “Your mistakes” list in the mock exam helps you find them.` },
       { q: 'What should I bring to the citizenship test?', a: 'Valid official photo ID, such as a passport, residence permit or substitute ID document, and the registration confirmation if the centre sent one. Phones and notes are locked away during the test. The centre usually provides a pen; ask when you register exactly what it requires so you are not turned away on the day.' },
       { q: 'How long does the citizenship test result take?', a: 'The papers go to BAMF, which marks them and posts the certificate. BAMF publishes no standard time frame; it depends on the centre and on the post. If your naturalisation authority is waiting for the certificate, you can often file the application already and send the proof in later.' },
+      { q: 'Can I take the citizenship test online and get a certificate?', a: 'No. Under section 1(3) of the Citizenship Test Ordinance, the test only counts if you sit it under supervision, and only then does BAMF issue the certificate. Practice tests exist online, from BAMF itself and on this site, but none of them replaces the exam at a test centre. Offers promising a certificate for an online test are worth nothing to the authority.' },
     ],
     body: (h) => `
 <h2>Step by step to the exam</h2>

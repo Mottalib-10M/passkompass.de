@@ -24,7 +24,7 @@ const en: typeof de = {
   moreOptions: 'More details', copyLink: 'Copy share link', copied: 'Link copied', print: 'Print', howComputed: 'How this is computed', openFull: 'Open the full calculator',
 };
 const tr: typeof de = {
-  updatedOn: 'Kontrol tarihi', editorialPolicy: 'Yayın ilkeleri', contactLabel: 'İletişim', reviewedBy: 'Hazırlayan',
+  updatedOn: 'Kontrol tarihi', editorialPolicy: 'Yayın ilkeleri (Almanca)', contactLabel: 'İletişim (Almanca)', reviewedBy: 'Hazırlayan',
   skipToContent: 'İçeriğe geç', mainNav: 'Ana menü', breadcrumbLabel: 'Sayfa yolu', breadcrumbHome: 'Ana sayfa', menuOpen: 'Menüyü aç',
   faqTitle: 'Sık sorulan sorular', relatedCalculators: 'Devam edin', sourcesTitle: 'Bu sayfanın resmî kaynakları', writtenBy: 'Hazırlayan',
   asOf: 'Durum', lastUpdated: 'kanunlar ve soru kataloğu kontrol tarihi', footerValidated: 'Kaynaklar: BAMF soru kataloğu (7 Mayıs 2025), gesetze-im-internet.de’deki Vatandaşlık Kanunu ve İkamet Kanunu',
@@ -36,7 +36,7 @@ const tr: typeof de = {
   moreOptions: 'Diğer bilgiler', copyLink: 'Bağlantıyı kopyala', copied: 'Bağlantı kopyalandı', print: 'Yazdır', howComputed: 'Hesaplama yöntemi', openFull: 'Tam hesaplayıcıyı aç',
 };
 const ar: typeof de = {
-  updatedOn: 'تاريخ المراجعة', editorialPolicy: 'السياسة التحريرية', contactLabel: 'اتصل بنا', reviewedBy: 'إعداد',
+  updatedOn: 'تاريخ المراجعة', editorialPolicy: 'السياسة التحريرية (بالألمانية)', contactLabel: 'اتصل بنا (بالألمانية)', reviewedBy: 'إعداد',
   skipToContent: 'انتقل إلى المحتوى', mainNav: 'القائمة الرئيسية', breadcrumbLabel: 'مسار الصفحة', breadcrumbHome: 'الرئيسية', menuOpen: 'فتح القائمة',
   faqTitle: 'أسئلة شائعة', relatedCalculators: 'تابع', sourcesTitle: 'المصادر الرسمية لهذه الصفحة', writtenBy: 'إعداد',
   asOf: 'الوضع في', lastUpdated: 'تمت مراجعة القوانين وكتالوج الأسئلة في', footerValidated: 'المصادر: كتالوج أسئلة BAMF (7 مايو 2025)، وقانون الجنسية وقانون الإقامة على gesetze-im-internet.de',

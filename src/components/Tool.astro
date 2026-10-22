@@ -8,5 +8,5 @@ interface Props { kind: string; lang: Lang; arg?: Record<string, number | string
 const { kind, lang, arg, idPrefix = 't' } = Astro.props;
 ---
 {kind === 'probe' || kind === 'katalog'
-  ? <Trainer client:load lang={lang} mode={kind} land={arg?.land ? String(arg.land) : undefined} auswahl={arg?.auswahl ? String(arg.auswahl) : undefined} idPrefix={idPrefix} />
+  ? <Trainer client:load lang={lang} mode={kind} land={arg?.land ? String(arg.land) : undefined} auswahl={arg?.auswahl ? String(arg.auswahl) : undefined} idPrefix={idPrefix} lid={arg?.lid ? true : false} />
   : <SpecTool client:load kind={kind} lang={lang} arg={arg ? JSON.stringify(arg) : undefined} methodHref={route('method', lang)} idPrefix={idPrefix} />}

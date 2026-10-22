@@ -18,7 +18,9 @@
   "bestehen": 17,
   "minuten": 60,
   "gebuehr": 25,
-  "source": "einbtestv"
+  "source": "einbtestv",
+  "lidBestehen": 15,
+  "lidSource": "bamf-lid"
  },
  "einb": {
   "jahre": 5,
@@ -227,6 +229,41 @@
    "label": {
     "de": "§ 29 StAG (weggefallen): frühere Optionspflicht",
     "en": "Section 29 StAG (repealed): former duty to choose a nationality"
+   }
+  },
+  "bamf-lid": {
+   "url": "https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Integrationskurse/Abschlusspruefung/abschlusspruefung-node.html",
+   "label": {
+    "de": "BAMF: Abschlussprüfung des Integrationskurses, Test „Leben in Deutschland“ (abgerufen am 22.10.2026)",
+    "en": "BAMF: integration course final exam, the “Leben in Deutschland” test (retrieved 22 Oct 2026)"
+   }
+  },
+  "intv17": {
+   "url": "https://www.gesetze-im-internet.de/intv/__17.html",
+   "label": {
+    "de": "§ 17 Integrationskursverordnung: Abschlusstest und Zertifikat Integrationskurs",
+    "en": "Section 17 Integration Course Ordinance (IntV): final test and integration course certificate"
+   }
+  },
+  "hamburg-einb": {
+   "url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-inneres-und-sport/aemter/amt-fuer-migration/einbuergerungsangelegenheiten",
+   "label": {
+    "de": "Hamburg, Amt für Migration: Einbürgerungsabteilung, digitaler Antrag (abgerufen am 22.10.2026)",
+    "en": "Hamburg, Office for Migration: naturalisation department, online application (retrieved 22 Oct 2026)"
+   }
+  },
+  "aufenthg78": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__78.html",
+   "label": {
+    "de": "§ 78 AufenthG: Dokumente mit elektronischem Speicher- und Verarbeitungsmedium",
+    "en": "Section 78 AufenthG: documents with an electronic storage medium"
+   }
+  },
+  "bamf-lid-info": {
+   "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/informationsblatt-test-leben-in-deutschland.pdf?__blob=publicationFile&v=6",
+   "label": {
+    "de": "BAMF: Informationsblatt zum Abschlusstest „Leben in Deutschland“ (Februar 2026)",
+    "en": "BAMF: information sheet on the “Leben in Deutschland” final test (February 2026)"
    }
   }
  }

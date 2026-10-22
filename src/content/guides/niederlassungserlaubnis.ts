@@ -19,19 +19,20 @@ export default defineGuide({
   id: 'niederlassungserlaubnis', group: 'aufenthalt', order: 110,
   tool: 'ne',
   related: ['blaue-karte', 'voraussetzungen', 'ehepartner', 'sprachnachweis'],
-  sources: ['aufenthg9', 'aufenthg18c', 'aufenthg26', 'aufenthg28', 'aufenthv44', 'stag10'],
+  sources: ['aufenthg9', 'aufenthg18c', 'aufenthg26', 'aufenthg28', 'aufenthv44', 'aufenthg78', 'stag10'],
   de: {
     slug: 'niederlassungserlaubnis',
     nav: 'Niederlassungserlaubnis', card: 'Fristen je Weg, Rentenbeiträge, Vergleich mit der Einbürgerung',
-    title: 'Niederlassungserlaubnis 2026: Fristen je Weg und Rechner',
+    title: 'Niederlassungserlaubnis 2026: Voraussetzungen und Antrag',
     description: 'Niederlassungserlaubnis 2026: Fristen und Rentenbeiträge für Fachkräfte, Blaue Karte, Flüchtlinge und Ehegatten, Gebühr, und ob Sie sie vor dem Pass brauchen.',
-    h1: 'Niederlassungserlaubnis: wann Sie sie bekommen',
+    h1: 'Unbefristete Niederlassungserlaubnis beantragen: Bedeutung, Verlängerung',
     intro: 'Weg wählen, Monate mit Titel und mit Rentenbeiträgen eingeben: Der Rechner zeigt, was bis zum unbefristeten Aufenthalt fehlt.',
     resume: `Die Niederlassungserlaubnis ist der unbefristete Aufenthaltstitel des deutschen Rechts. Auf dem allgemeinen Weg nach § 9 AufenthG verlangt sie ${N.jahre} Jahre Aufenthaltserlaubnis, ${N.beitraege} Monate Pflichtbeiträge zur Rentenversicherung, Deutsch auf Niveau B1, Grundkenntnisse der Rechts- und Gesellschaftsordnung und einen gesicherten Lebensunterhalt. Schneller geht es für Fachkräfte nach § 18c: ${N.fachkraftJahre} Jahre und ${N.fachkraftBeitraege} Beitragsmonate, mit deutschem Abschluss ${N.fachkraftInlandJahre} Jahre und ${N.fachkraftInlandBeitraege} Monate. Inhaber der Blauen Karte EU brauchen ${N.blauMonate} Monate mit A1 oder ${N.blauMonateB1} Monate mit B1. Anerkannte Flüchtlinge erhalten sie nach § 26 Abs. 3 nach ${N.schutzJahre} Jahren mit A2 oder nach ${N.schutzJahreC1} Jahren mit C1, Ehegatten von Deutschen nach § 28 nach ${N.ehegatteDeutschJahre} Jahren. Die Gebühr liegt nach § 44 AufenthV zwischen ${N.gebuehrSonst} € und ${N.gebuehrHq} €. Für die Einbürgerung ist sie nicht nötig: Nach ${E.jahre} Jahren reicht meist auch eine befristete Erlaubnis.`,
     faqs: [
       { q: 'Brauche ich eine Niederlassungserlaubnis, bevor ich mich einbürgern lasse?', a: 'Nein. § 10 StAG verlangt ein unbefristetes Aufenthaltsrecht oder eine Aufenthaltserlaubnis, die nicht auf der Ausschlussliste steht. Eine Erlaubnis für Arbeit, eine Blaue Karte oder eine Erlaubnis zum Familiennachzug reichen. Wer ohnehin die Einbürgerung anstrebt und die fünf Jahre bald erfüllt, kann die Niederlassungserlaubnis überspringen und Zeit und Gebühren sparen.' },
       { q: 'Zählen Monate mit Minijob als Rentenbeiträge?', a: 'Nur wenn Pflichtbeiträge gezahlt wurden. Bei einem Minijob sind Sie grundsätzlich rentenversicherungspflichtig, können sich aber befreien lassen; dann fehlen die Monate. Zeiten der Kindererziehung oder Pflege können nach dem Gesetz ebenfalls zählen. Ihren Versicherungsverlauf erhalten Sie kostenlos bei der Deutschen Rentenversicherung; er zeigt jeden Beitragsmonat.' },
       { q: 'Wie viel kostet die Niederlassungserlaubnis?', a: `Nach § 44 der Aufenthaltsverordnung ${N.gebuehrHq} € für Hochqualifizierte, ${N.gebuehrSelbst} € für Selbstständige und ${N.gebuehrSonst} € in den übrigen Fällen. Die Verordnung sieht für einige Gruppen Befreiungen oder Ermäßigungen vor, die Ausländerbehörde prüft das im Einzelfall. Fragen Sie bei der Antragstellung danach und legen Sie Nachweise über Ihre Lage gleich bei.` },
+      { q: 'Muss ich die Niederlassungserlaubnis verlängern?', a: 'Den Titel selbst nicht, denn er ist unbefristet. Erneuern müssen Sie nur die Karte des elektronischen Aufenthaltstitels, wenn deren Gültigkeit endet oder wenn Sie einen neuen Pass bekommen. Die neue Karte beantragen Sie rechtzeitig bei der Ausländerbehörde; bringen Sie Pass und ein aktuelles biometrisches Foto mit. Verloren geht der Titel dagegen nach einem Auslandsaufenthalt von mehr als sechs Monaten ohne Erlaubnis.' },
     ],
     body: (h) => `
 <h2>Die Fristen je Weg</h2>
@@ -44,6 +45,10 @@ ${h.mini('ne', { p: ['weg', 'mt', 'mb'], d: { mt: 30, mb: 30 }, t: 'Ihre Monate 
 <h2>Niederlassungserlaubnis oder gleich Einbürgerung?</h2>
 <p>Beides ist unbefristet, aber nur die Einbürgerung bringt Wahlrecht, einen deutschen Pass und Schutz vor Ausweisung. Die Niederlassungserlaubnis erlischt, wenn Sie länger als sechs Monate ins Ausland gehen, sofern die Behörde keine längere Frist erlaubt hat. Ihr Vorteil: Sie kommt für Fachkräfte und Blaue-Karte-Inhaber oft Jahre vor der Einbürgerung. Wer früher Sicherheit braucht, etwa für einen Kredit oder einen Arbeitgeberwechsel, nimmt sie mit; wer bald die ${h.n(E.jahre)} Jahre erfüllt, prüft lieber direkt die ${h.a('voraussetzungen', 'Voraussetzungen der Einbürgerung')}.</p>
 <p>Die Gebühren nach ${h.src('aufenthv44', '§ 44 AufenthV')}: ${h.eur(N.gebuehrHq)} für Hochqualifizierte, ${h.eur(N.gebuehrSelbst)} für Selbstständige, ${h.eur(N.gebuehrSonst)} sonst. Zum Vergleich kostet die Einbürgerung ${h.eur(K.P.gebuehr.einbuergerung)}.</p>
+<h2>Bedeutung, Antrag und Verlängerung der Karte</h2>
+<p>Was die Niederlassungserlaubnis bedeutet, sagt ${h.src('aufenthg9', '§ 9 Abs. 1 AufenthG')} in einem Satz: Sie ist ein unbefristeter Aufenthaltstitel, und Nebenbestimmungen sind nur in den Fällen erlaubt, die das Gesetz ausdrücklich zulässt. Sie dürfen damit jede Arbeit aufnehmen und den Arbeitgeber wechseln, ohne die Ausländerbehörde zu fragen.</p>
+<p>Den Antrag stellen Sie bei der Ausländerbehörde Ihres Wohnorts, je nach Stadt mit einem Formular, online oder bei einem Termin. Ein bundesweit einheitliches Antragsformular gibt es nicht. Fast überall verlangt werden der Pass, ein biometrisches Foto, der Versicherungsverlauf der Rentenversicherung, Nachweise über Einkommen und Wohnung, das Sprachzertifikat und ein Nachweis der Grundkenntnisse. Für Letzteres reicht nach § 9 Abs. 2 Satz 2 ein erfolgreich abgeschlossener Integrationskurs, also bestandene Sprachprüfung und bestandener ${h.a('leben-in-deutschland', 'Test „Leben in Deutschland“')}.</p>
+<p>Verlängern müssen Sie die Niederlassungserlaubnis selbst nie. Verlängert wird nur die Karte, auf der sie steht: Der elektronische Aufenthaltstitel trägt nach ${h.src('aufenthg78', '§ 78 AufenthG')} eine Gültigkeitsdauer, bei unbefristeten Titeln die technische Nutzungsdauer der Karte. Läuft sie ab oder bekommen Sie einen neuen Pass, beantragen Sie bei der Ausländerbehörde eine neue Karte; Ihr Recht zu bleiben ändert sich dadurch nicht.</p>
 `,
   },
   en: {
@@ -58,6 +63,7 @@ ${h.mini('ne', { p: ['weg', 'mt', 'mb'], d: { mt: 30, mb: 30 }, t: 'Ihre Monate 
       { q: 'Do I need a settlement permit before applying for citizenship?', a: 'No. Section 10 StAG requires either a permanent right of residence or a residence permit not on the excluded list. A work permit, a Blue Card or a family permit is enough. If you are aiming for citizenship anyway and will soon reach five years, you can skip the settlement permit and save both time and fees.' },
       { q: 'Do mini-job months count as pension contributions?', a: 'Only if compulsory contributions were paid. A mini-job is in principle subject to pension insurance, but you can opt out, and then the months are missing. Periods of child-raising or caring can also count under the law. The German Pension Insurance sends your insurance record free of charge; it lists every contribution month.' },
       { q: 'How much does the settlement permit cost?', a: `Under section 44 of the Residence Ordinance, €${N.gebuehrHq} for highly qualified people, €${N.gebuehrSelbst} for the self-employed and €${N.gebuehrSonst} in other cases. The ordinance provides exemptions or reductions for some groups, which the foreigners’ authority checks case by case. Ask when you apply and include proof of your situation straight away.` },
+      { q: 'Do I have to renew my settlement permit?', a: 'Not the title itself, because it is permanent. You only renew the electronic residence card when its validity ends or when you get a new passport. Apply for the new card at the foreigners’ authority in good time, bringing your passport and a recent biometric photo. The title is lost, however, if you stay abroad for more than six months without permission.' },
     ],
     body: (h) => `
 <h2>Periods by route</h2>
@@ -70,6 +76,10 @@ ${h.mini('ne', { p: ['weg', 'mt', 'mb'], d: { mt: 30, mb: 30 }, t: 'Your months 
 <h2>Settlement permit or straight to citizenship?</h2>
 <p>Both are permanent, but only citizenship brings the vote, a German passport and protection from expulsion. A settlement permit lapses if you leave Germany for more than six months unless the authority has allowed longer. Its advantage is timing: for skilled workers and Blue Card holders it often comes years before citizenship. If you need certainty sooner, for a loan or a change of employer, take it; if you will soon reach ${h.n(E.jahre)} years, check the ${h.a('voraussetzungen', 'citizenship requirements')} directly.</p>
 <p>Fees under ${h.src('aufenthv44', 'section 44 of the Residence Ordinance')}: ${h.eur(N.gebuehrHq)} for highly qualified people, ${h.eur(N.gebuehrSelbst)} for the self-employed, ${h.eur(N.gebuehrSonst)} otherwise. Naturalisation costs ${h.eur(K.P.gebuehr.einbuergerung)} by comparison.</p>
+<h2>What it means, applying and renewing the card</h2>
+<p>${h.src('aufenthg9', 'Section 9(1) of the Residence Act')} defines it in one sentence: the settlement permit is a permanent residence title, and conditions may only be attached where the Act expressly allows them. You can take any job and change employer without asking the foreigners’ authority.</p>
+<p>You apply to the foreigners’ authority where you live, using a form, an online service or an appointment depending on the city. There is no single national application form. Almost everywhere you need your passport, a biometric photo, your pension insurance record, proof of income and housing, the language certificate and proof of basic knowledge. For the last point, section 9(2) says a successfully completed integration course is enough, meaning a passed language exam and a passed ${h.a('leben-in-deutschland', 'Leben in Deutschland test')}.</p>
+<p>You never renew the settlement permit itself. Only the card it is printed on is renewed: under ${h.src('aufenthg78', 'section 78 of the Residence Act')} the electronic residence card shows a period of validity, for permanent titles the technical life of the card. When it expires, or when you get a new passport, ask the authority for a new card; your right to stay does not change.</p>
 `,
   },
 });

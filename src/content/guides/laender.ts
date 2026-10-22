@@ -401,7 +401,7 @@ const pages: GuideDef[] = K.LAENDER.map((L, i) => {
       slug: `einbuergerungstest-${L.slugDe}`,
       nav: L.de, card: `Hauptstadt ${L.hauptstadt}: die ${K.P.katalog.proLand} Landesfragen mit Lösung`,
       title: titleDe(nDe), description: descDe(nDe, L.hauptstadt),
-      h1: `Einbürgerungstest ${L.de}: die Landesfragen`,
+      h1: `Einbürgerungstest ${L.de}: Fragen und Antworten zum Land`,
       intro: t.de.intro, resume: t.de.resume, faqs: t.de.faqs,
       body: (h) => `
 <h2>Die zehn Fragen zu ${L.de}</h2>

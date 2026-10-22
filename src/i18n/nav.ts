@@ -5,8 +5,8 @@ export interface NavLink { href: string; label: string } export interface NavCat
 const CORE: Record<Locale, Record<string, string>> = {
   de: { home: 'Einbürgerungstest online', method: 'Methode', about: 'Über uns', widget: 'Rechner einbinden', contact: 'Kontakt', editorial: 'Redaktionsgrundsätze', privacy: 'Datenschutz', terms: 'Impressum', cookies: 'Cookies' },
   en: { home: 'German citizenship test online', method: 'Method', about: 'About', widget: 'Embed the tools', contact: 'Contact', editorial: 'Editorial policy', privacy: 'Privacy', terms: 'Legal notice', cookies: 'Cookies' },
-  tr: { home: 'Vatandaşlık testi', method: 'Yöntem (Almanca)', about: 'Hakkımızda (Almanca)', widget: 'Widget', contact: 'İletişim', editorial: 'Yayın ilkeleri', privacy: 'Gizlilik', terms: 'Künye', cookies: 'Çerezler' },
-  ar: { home: 'اختبار الجنسية', method: 'المنهجية (بالألمانية)', about: 'من نحن (بالألمانية)', widget: 'أداة للتضمين', contact: 'اتصل بنا', editorial: 'السياسة التحريرية', privacy: 'الخصوصية', terms: 'بيانات الناشر', cookies: 'ملفات تعريف الارتباط' },
+  tr: { home: 'Vatandaşlık testi', method: 'Yöntem (Almanca)', about: 'Hakkımızda (Almanca)', widget: 'Widget (Almanca)', contact: 'İletişim (Almanca)', editorial: 'Yayın ilkeleri (Almanca)', privacy: 'Gizlilik (Almanca)', terms: 'Künye (Almanca)', cookies: 'Çerezler (Almanca)' },
+  ar: { home: 'اختبار الجنسية', method: 'المنهجية (بالألمانية)', about: 'من نحن (بالألمانية)', widget: 'أداة للتضمين (بالألمانية)', contact: 'اتصل بنا (بالألمانية)', editorial: 'السياسة التحريرية (بالألمانية)', privacy: 'الخصوصية (بالألمانية)', terms: 'بيانات الناشر (بالألمانية)', cookies: 'ملفات تعريف الارتباط (بالألمانية)' },
 };
 export const GROUPS: Array<{ id: Group; label: Record<Locale, string> }> = [
   { id: 'test', label: { de: 'Einbürgerungstest', en: 'Citizenship test', tr: 'Vatandaşlık testi', ar: 'اختبار الجنسية' } },

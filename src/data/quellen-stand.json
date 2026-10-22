@@ -113,6 +113,31 @@
    "url": "https://www.gesetze-im-internet.de/stag/__29.html",
    "sha256": "58805c1131847fa089e172cd0bcb039a7ab17b2e178fe1a25bc255b0df6aa2f5",
    "zeichen": 108
+  },
+  "bamf-lid": {
+   "url": "https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Integrationskurse/Abschlusspruefung/abschlusspruefung-node.html",
+   "sha256": "a2933c6850c6899b87d6407dd306896677a8a6d2a43134b1894a065c56e33d65",
+   "zeichen": 7653
+  },
+  "intv17": {
+   "url": "https://www.gesetze-im-internet.de/intv/__17.html",
+   "sha256": "701ff023f90589e6a66e2cc0fc1f97fa3bd7face1a1481cc6040c4dbe6275500",
+   "zeichen": 3698
+  },
+  "hamburg-einb": {
+   "url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-inneres-und-sport/aemter/amt-fuer-migration/einbuergerungsangelegenheiten",
+   "sha256": "5bbb4f8dc5c34d9c099112515e8b0197ca1dc6a818ecafd6e9f10f727d1d17b1",
+   "zeichen": 3107
+  },
+  "aufenthg78": {
+   "url": "https://www.gesetze-im-internet.de/aufenthg_2004/__78.html",
+   "sha256": "1626003b908e6d64d6ae91ec91203727975df841ce6078645cedda9b3dc8d689",
+   "zeichen": 9820
+  },
+  "bamf-lid-info": {
+   "url": "https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/informationsblatt-test-leben-in-deutschland.pdf?__blob=publicationFile&v=6",
+   "sha256": "538f02662f98afda4a7690b3cbca27553333ae3cf289cbd985c0fd22df36242a",
+   "zeichen": 2314
   }
  }
 }

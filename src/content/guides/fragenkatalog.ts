@@ -20,9 +20,9 @@ export default defineGuide({
   de: {
     slug: 'einbuergerungstest-fragen',
     nav: 'Alle Fragen mit Lösung', card: `Die ${KA.allgemein} allgemeinen Fragen, nach Themen, mit Lösung`,
-    title: 'Einbürgerungstest Fragen 2026: alle 300 mit Lösungen',
+    title: 'Einbürgerungstest Fragen und Antworten 2026: alle 300',
     description: 'Einbürgerungstest Fragen 2026: alle 300 allgemeinen Fragen des BAMF-Katalogs mit richtiger Antwort, nach Themen geordnet, mit Übungsmodus Frage für Frage.',
-    h1: 'Alle Fragen des Einbürgerungstests mit Lösung',
+    h1: 'Fragenkatalog zur Testvorbereitung: alle Fragen mit Lösung',
     intro: `Die ${KA.allgemein} allgemeinen Fragen aus dem amtlichen Katalog, Stand ${K.STAND.split('-').reverse().join('.')}. Oben Frage für Frage üben, unten alle auf einen Blick, die richtige Antwort markiert.`,
     resume: `Der amtliche Gesamtkatalog des BAMF umfasst ${KA.fragen} Fragen: ${KA.allgemein} allgemeine, die in jedem Bundesland gelten, und ${KA.proLand} Fragen für jedes der 16 Länder. Im Einbürgerungstest kommen ${T.fragen - T.landFragen} allgemeine Fragen und ${T.landFragen} Landesfragen dran, jede mit vier Antworten, von denen genau eine richtig ist. Diese Seite zeigt alle ${KA.allgemein} allgemeinen Fragen im Wortlaut des Katalogs, in fünf Blöcken nach der Reihenfolge des Katalogs, und markiert die richtige Antwort. ${bilder} Fragen zeigen in der Prüfung ein Bild, etwa ein Wappen, ein Plakat oder einen Stimmzettel; wir geben das Bild in Worten wieder, weil die Abbildungen des Katalogs nicht frei verwendet werden dürfen. Der Übungsmodus oben stellt die Fragen einzeln, nach Block, nach Bundesland oder zufällig, und zählt Ihre richtigen Antworten mit. Die Lösungen hat Radif Partners selbst ermittelt, denn das BAMF veröffentlicht den Katalog ohne Schlüssel.`,
     faqs: [
