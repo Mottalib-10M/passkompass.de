@@ -27,7 +27,7 @@ from datetime import date
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARAMS = os.path.join(ROOT, 'src', 'data', 'params-2026.json')
 STAND = os.path.join(ROOT, 'src', 'data', 'quellen-stand.json')
-UA = 'Mozilla/5.0 (compatible; Passkompass-Quellenpruefung; +https://de-einbuergerung.example/de/methode/)'
+UA = 'Mozilla/5.0 (compatible; Passkompass-Quellenpruefung; +https://passkompass.de/de/methode/)'
 
 
 def fetch(url):

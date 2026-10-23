@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://de-einbuergerung.example";
+export const SITE_URL = "https://passkompass.de";
 export const SITE_NAMES: Record<string, string> = {"de": "Passkompass", "en": "Passkompass", "tr": "Passkompass", "ar": "Passkompass"};
 export const LANG_TAGS: Record<string, string> = {"de": "de-DE", "en": "en-DE", "tr": "tr-DE", "ar": "ar-DE"};
 /** Locale des nombres et des dates : anglais britannique pour la version anglaise (« €255 »), chiffres latins en arabe. */
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"de": "Radif Partners ist ei
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"de": ["Einbürgerungstest und Test „Leben in Deutschland“", "Einbürgerung nach § 10 Staatsangehörigkeitsgesetz", "Einbürgerung von Ehegatten Deutscher nach § 9 StAG", "Niederlassungserlaubnis nach dem Aufenthaltsgesetz", "Gebühren nach § 38 StAG"], "en": ["German citizenship test", "Naturalisation in Germany", "Permanent residence in Germany"], "tr": ["Alman vatandaşlık testi", "Almanya’da vatandaşlığa geçiş"], "ar": ["اختبار الجنسية الألمانية", "التجنس في ألمانيا"]};
-export const CONTACT_EMAIL = "kontakt@de-einbuergerung.example";
+export const CONTACT_EMAIL = "kontakt@passkompass.de";
 export const THEME_COLOR = '#8C1D18';
 export const LOGO_SYMBOL = 'EB';
 export const BING_VERIFY_CODE = '';

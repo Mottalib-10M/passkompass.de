@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://de-einbuergerung.example/sitemap-index.xml
+Sitemap: https://passkompass.de/sitemap-index.xml
