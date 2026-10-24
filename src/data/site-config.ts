@@ -31,7 +31,7 @@ export const CONSENT_MODE: 'opt-in' | 'notice' | 'none' = 'none';
  *  avec cookies _ga / _ga_<ID> (390 jours), sans bandeau, publicité refusée. Créée par
  *  `seo-platform/scripts/create-ga4.ts accounts/372759688` (RECETTE §15.3, étape 15), puis
  *  pages légales régénérées : `python3 scripts/gen-legal-pages.py .`. Vide = pas de GA4. */
-export const GA4_ID = '';
+export const GA4_ID = 'G-EWNK90RXSZ';
 /** Projet Microsoft Clarity (compte amradif), chargé sans cookie. Vide = aucune mesure. */
 export const CLARITY_ID = 'z25xqnv0rn';
 export const INDEXNOW_KEY = 'db2ef7ecc89fb3dc56588aa764d7dc23';
