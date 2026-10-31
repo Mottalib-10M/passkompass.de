@@ -36,7 +36,7 @@ ${h.table(['Regel', 'Früher', 'Heute'], [
 <p>Wer seine alte Staatsangehörigkeit trotzdem aufgeben möchte, etwa um Pflichten im Herkunftsstaat zu beenden, kann das weiterhin tun. Es ist nur keine Voraussetzung mehr, und die Einbürgerungsbehörde stellt dafür keine Einbürgerungszusicherung mehr als Pflichtschritt aus.</p>
 <h2>Was bleibt Voraussetzung</h2>
 <p>Alle anderen Bedingungen gelten unverändert: ${h.n(E.jahre)} Jahre Aufenthalt, Deutsch ${E.sprache}, Test, Lebensunterhalt und Straffreiheit. Ob Sie die erfüllen und ab wann Sie den Antrag stellen können, zeigt der Rechner:</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Alle Voraussetzungen prüfen' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Alle Voraussetzungen prüfen' })}
 <p>Für Kinder, die in Deutschland geboren werden, gilt eine eigene Regel: Hat ein Elternteil seit fünf Jahren seinen rechtmäßigen gewöhnlichen Aufenthalt hier und ein unbefristetes Aufenthaltsrecht, wird das Kind mit der Geburt deutsch (${h.src('stag4', '§ 4 Abs. 3 StAG')}); mehr unter ${h.a('kinder', 'Einbürgerung von Kindern')}.</p>
 `,
   },
@@ -67,7 +67,7 @@ ${h.table(['Rule', 'Before', 'Now'], [
 <p>If you still want to give up your old nationality, for example to end obligations in that country, you can. It is simply no longer a requirement, and the naturalisation authority no longer issues an assurance of naturalisation as a mandatory step for it.</p>
 <h2>What is still required</h2>
 <p>All other conditions are unchanged: ${h.n(E.jahre)} years of residence, German at ${E.sprache}, the test, livelihood and a clean record. Whether you meet them and when you can apply is what the calculator shows:</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Check every requirement' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Check every requirement' })}
 <p>Children born in Germany have their own rule: if one parent has lived here lawfully for five years and holds a permanent right of residence, the child is German from birth (${h.src('stag4', 'section 4(3) StAG')}); see ${h.a('kinder', 'citizenship for children')}.</p>
 `,
   },

@@ -36,7 +36,7 @@ const de: HomeLang = {
   ],
   why: (h) => `<h2>Wann können Sie den Antrag stellen?</h2>
 <p>Der Test ist nur ein Baustein. Für den Anspruch nach ${h.src('stag10', '§ 10 StAG')} brauchen Sie ${h.n(E.jahre)} Jahre rechtmäßigen Aufenthalt, einen passenden Aufenthaltstitel, Deutsch auf Niveau ${E.sprache}, einen Lebensunterhalt ohne Bürgergeld oder Sozialhilfe und keine erhebliche Verurteilung. Geben Sie unten Titel und Einreisemonat ein: Der Rechner nennt den frühesten Antragsmonat und markiert, was noch nachzuweisen ist.</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Alle Voraussetzungen prüfen' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Alle Voraussetzungen prüfen' })}
 <p>Die vollständige Prüfung mit Ehe, Verurteilungen und angerechneten Zeiten steht auf der Seite ${h.a('voraussetzungen', 'Einbürgerung: Voraussetzungen')}; die Gebühren für die ganze Familie rechnet ${h.a('kosten', 'Einbürgerung: Kosten')} aus.</p>`,
   sections: (h) => [
     { title: 'Wie die Probeprüfung funktioniert', html: `<p>Jede Probeprüfung zieht ${h.n(T.fragen - T.landFragen)} der ${h.n(K.allgemein)} allgemeinen Fragen und ${h.n(T.landFragen)} der ${h.n(K.proLand)} Fragen des gewählten Bundeslandes, in zufälliger Reihenfolge, so wie die Prüfbögen der Behörden aufgebaut sind. Nach jedem Klick sehen Sie, ob die Antwort stimmt, und rechts zählt das Ergebnis mit. Sind alle Fragen beantwortet, steht dort „Bestanden“ oder „Noch nicht bestanden“; unter „Ihre Fehler“ springen Sie direkt zu den falsch beantworteten Fragen zurück. Mit „Neue Probeprüfung“ ziehen Sie einen neuen Bogen.</p><p>Gezielt lernen Sie im ${h.a('fragenkatalog', 'Fragenkatalog mit allen Lösungen')}: dort lassen sich die Fragen nach Themenblöcken oder nach Bundesland filtern.</p>` },
@@ -70,7 +70,7 @@ const en: HomeLang = {
   ],
   why: (h) => `<h2>When can you apply?</h2>
 <p>The test is one piece. To be entitled under ${h.src('stag10', 'section 10 of the Nationality Act')} you need ${h.n(E.jahre)} years of lawful residence, a qualifying residence title, German at level ${E.sprache}, a livelihood without basic income support or social assistance, and no significant conviction. Enter your title and the month you arrived: the calculator gives your earliest month to apply and flags what is still to prove.</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Check every requirement' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Check every requirement' })}
 <p>The full check, including marriage, convictions and credited time, is on ${h.a('voraussetzungen', 'German citizenship requirements')}; ${h.a('kosten', 'naturalisation fees')} adds up the cost for the whole family.</p>`,
   sections: (h) => [
     { title: 'How the mock exam works', html: `<p>Each mock exam draws ${h.n(T.fragen - T.landFragen)} of the ${h.n(K.allgemein)} general questions and ${h.n(T.landFragen)} of the ${h.n(K.proLand)} questions for the state you pick, in random order, the way the official papers are built. After each click you see whether the answer is right, and the score on the right keeps count. Once every question is answered it says “Passed” or “Not passed yet”, and “Your mistakes” takes you back to the questions you missed. “New mock test” draws a fresh paper.</p><p>For targeted learning, the ${h.a('fragenkatalog', 'question catalogue with all answers')} lets you filter by topic block or by state.</p>` },
@@ -104,7 +104,7 @@ const tr: HomeLang = {
   ],
   why: (h) => `<h2>Ne zaman başvurabilirsiniz?</h2>
 <p>Test, şartlardan yalnızca biridir. ${h.src('stag10', 'Vatandaşlık Kanunu’nun 10. maddesine')} göre ${h.n(E.jahre)} yıl yasal ikamet, uygun bir oturum belgesi, ${E.sprache} seviyesinde Almanca, Bürgergeld veya sosyal yardım almadan geçim ve önemli bir mahkûmiyetin olmaması gerekir. Oturum belgenizi ve Almanya’ya geldiğiniz yılı girin: hesaplayıcı en erken başvuru ayını gösterir.</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Tüm şartları kontrol edin' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Tüm şartları kontrol edin' })}
 <p>Tam kontrol için: ${h.a('voraussetzungen', 'Almanya vatandaşlığı şartları')}.</p>`,
   sections: (h) => [
     { title: 'Deneme sınavı nasıl çalışır?', html: `<p>Her deneme sınavı ${h.n(K.allgemein)} genel sorudan ${h.n(T.fragen - T.landFragen)} tanesini ve seçtiğiniz eyaletin ${h.n(K.proLand)} sorusundan ${h.n(T.landFragen)} tanesini rastgele sırayla seçer; resmî sınav kâğıtları da böyle hazırlanır. Her tıklamadan sonra cevabın doğru olup olmadığını görürsünüz, sağdaki kutu sonucu sayar. Bütün sorular cevaplanınca „Geçtiniz“ veya „Henüz geçmediniz“ yazar; „Hatalarınız“ bölümünden yanlış cevapladığınız sorulara dönersiniz. „Yeni deneme sınavı“ yeni bir kâğıt çeker.</p>` },
@@ -137,7 +137,7 @@ const ar: HomeLang = {
   ],
   why: (h) => `<h2>متى يمكنك تقديم الطلب؟</h2>
 <p>الاختبار شرط واحد من عدة شروط. وفق ${h.src('stag10', 'المادة 10 من قانون الجنسية')} تحتاج إلى ${h.n(E.jahre)} سنوات من الإقامة القانونية، وتصريح إقامة مناسب، ولغة ألمانية بمستوى ${E.sprache}، وإعالة نفسك دون Bürgergeld أو مساعدة اجتماعية، وألا تكون عليك إدانة جسيمة. أدخل نوع إقامتك وسنة قدومك: تعرض الحاسبة أقرب شهر للتقديم.</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'تحقق من جميع الشروط' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'تحقق من جميع الشروط' })}
 <p>للتحقق الكامل: ${h.a('voraussetzungen', 'شروط الجنسية الألمانية')}.</p>`,
   sections: (h) => [
     { title: 'كيف يعمل الاختبار التجريبي؟', html: `<p>يختار كل اختبار تجريبي ${h.n(T.fragen - T.landFragen)} سؤالًا من بين ${h.n(K.allgemein)} سؤال عام و${h.n(T.landFragen)} أسئلة من بين ${h.n(K.proLand)} أسئلة الولاية المختارة، بترتيب عشوائي، كما تُعدّ أوراق الامتحان الرسمية. بعد كل نقرة ترى إن كانت الإجابة صحيحة، ويحسب المربع الجانبي النتيجة. عند الانتهاء يظهر „ناجح“ أو „لم تنجح بعد“، ويعيدك قسم „أخطاؤك“ إلى الأسئلة التي أخطأت فيها.</p>` },

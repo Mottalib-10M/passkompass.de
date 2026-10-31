@@ -39,7 +39,7 @@ ${h.table(['', 'Feststellung', 'Einbürgerung'], [
 <p>Die Behörde braucht Urkunden im Original oder in beglaubigter Kopie, ausländische Dokumente mit Übersetzung. Sammeln Sie zuerst, was die Familie selbst hat: alte Pässe, Heimatscheine, Einbürgerungsurkunden, Wehrpässe, Meldekarten. Fehlende Einträge lassen sich oft bei Standesämtern, Stadtarchiven oder dem Bundesarchiv anfragen. Ein Stammbaum mit Geburts- und Heiratsdaten jeder Generation erleichtert der Behörde die Prüfung erheblich.</p>
 <h2>Wenn die Feststellung negativ ausfällt</h2>
 <p>Ergibt die Prüfung, dass Sie nicht deutsch sind, bleibt die Einbürgerung. Ob Sie deren Bedingungen erfüllen, zeigt der Rechner:</p>
-${h.mini('einb', { p: ['titel', 'jahr', 'deutsch'], c: 'Voraussetzungen der Einbürgerung prüfen' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'deutsch'], c: 'Voraussetzungen der Einbürgerung prüfen' })}
 <p>Die Gebühr von ${h.eur(G.feststellung)} nach ${h.src('stag38', '§ 38 StAG')} fällt für die Prüfung an, nicht für ein positives Ergebnis. Wer zusätzlich eine Bescheinigung über das Nichtbestehen der deutschen Staatsangehörigkeit braucht, etwa für ein anderes Land, kann sie auf Antrag erhalten.</p>
 `,
   },
@@ -73,7 +73,7 @@ ${h.table(['', 'Determination', 'Naturalisation'], [
 <p>The authority needs certificates as originals or certified copies, and foreign documents with a translation. Start with what the family already holds: old passports, certificates of nationality, naturalisation certificates, military papers, registration cards. Missing entries can often be requested from registry offices, city archives or the Federal Archives. A family tree with the birth and marriage dates of each generation makes the review much easier.</p>
 <h2>If the answer is no</h2>
 <p>If the check finds you are not German, naturalisation remains. The calculator shows whether you meet its conditions:</p>
-${h.mini('einb', { p: ['titel', 'jahr', 'deutsch'], c: 'Check the naturalisation requirements' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'deutsch'], c: 'Check the naturalisation requirements' })}
 <p>The ${h.eur(G.feststellung)} fee under ${h.src('stag38', 'section 38 StAG')} is for the check, not for a positive result. If you also need a certificate that you do not hold German nationality, for example for another country, you can get one on request.</p>
 `,
   },

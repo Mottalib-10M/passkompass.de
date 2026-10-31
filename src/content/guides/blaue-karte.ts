@@ -13,7 +13,7 @@ export default defineGuide({
   sources: ['aufenthg18g', 'drv-bbg', 'aufenthg18c', 'stag10'],
   de: {
     slug: 'blaue-karte-gehalt',
-    nav: 'Blaue Karte EU', card: `Mindestgehalt ${B.jahr}: ${S.regel.toLocaleString('de-DE')} € oder ${S.engpass.toLocaleString('de-DE')} €`,
+    nav: 'Blaue Karte EU', card: `Mindestgehalt ${B.jahr}: ${S.regel.toLocaleString('de-DE')} € oder ${S.engpass.toLocaleString('de-DE', { minimumFractionDigits: 2 })} €`,
     title: 'Blaue Karte Mindestgehalt 2026: Grenzen und Weg zum Pass',
     description: `Blaue Karte EU 2026: Mindestgehalt ${S.regel.toLocaleString('de-DE')} € oder ${S.engpass.toLocaleString('de-DE', { minimumFractionDigits: 2 })} € in Engpassberufen und für Berufseinsteiger, Rechner, dann Niederlassungserlaubnis nach 21 Monaten.`,
     h1: 'Blaue Karte EU: Mindestgehalt, Niederlassungserlaubnis, Pass',
@@ -45,7 +45,7 @@ ${h.mini('blau', { p: ['g', 'eng'], d: { g: SAMPLE[0] }, t: 'Reicht Ihr Gehalt?'
   },
   en: {
     slug: 'eu-blue-card-germany-salary',
-    nav: 'EU Blue Card', card: `Minimum salary ${B.jahr}: €${S.regel.toLocaleString('en-GB')} or €${S.engpass.toLocaleString('en-GB')}`,
+    nav: 'EU Blue Card', card: `Minimum salary ${B.jahr}: €${S.regel.toLocaleString('en-GB')} or €${S.engpass.toLocaleString('en-GB', { minimumFractionDigits: 2 })}`,
     title: 'EU Blue Card Germany Salary 2026: Thresholds and Path',
     description: `EU Blue Card Germany 2026: minimum salary €${S.regel.toLocaleString('en-GB')}, or €${S.engpass.toLocaleString('en-GB', { minimumFractionDigits: 2 })} in shortage jobs and for new graduates, a salary check, then settlement after 21 months.`,
     h1: 'EU Blue Card Germany: minimum salary and the path to citizenship',

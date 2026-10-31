@@ -38,7 +38,7 @@ ${h.table(['Nachweis', 'Reicht für die Einbürgerung?', 'Hinweis'], [
 <h2>Was eine B1-Prüfung verlangt</h2>
 <p>Auf B1 verstehen Sie die Hauptpunkte, wenn klar über vertraute Dinge aus Arbeit, Schule oder Freizeit gesprochen wird, kommen in den meisten Alltagssituationen zurecht, schreiben einfache zusammenhängende Texte und können Erfahrungen, Pläne und Meinungen kurz begründen. Die Prüfungen bestehen meist aus Hören, Lesen, Schreiben und einem mündlichen Teil, oft mit einer Partnerin oder einem Partner. Die Preise legen die Prüfzentren fest; sie sind nicht einheitlich, deshalb nennen wir keinen Betrag.</p>
 <p>Wer nicht weiß, ob der Sprachnachweis der letzte offene Punkt ist, gibt sein Niveau im Rechner an:</p>
-${h.mini('einb', { p: ['deutsch', 'titel', 'jahr'], d: { deutsch: 'a2' }, c: 'Alle Voraussetzungen prüfen' })}
+${h.mini('einb', { p: ['deutsch', 'titel', 'jahr', 'monat'], d: { deutsch: 'a2' }, c: 'Alle Voraussetzungen prüfen' })}
 <p>Für den Einbürgerungstest ist B1 kein formaler Zugang, aber eine große Hilfe: Die Fragen stehen nur auf Deutsch im Bogen. Wer mit dem ${h.a('fragenkatalog', 'Fragenkatalog')} übt, lernt nebenbei den Wortschatz, den viele Sprachprüfungen im Bereich Gesellschaft abfragen.</p>
 `,
   },
@@ -71,7 +71,7 @@ ${h.table(['Proof', 'Enough for citizenship?', 'Note'], [
 <h2>What a B1 exam asks of you</h2>
 <p>At B1 you understand the main points of clear speech on familiar matters from work, school or leisure, cope with most everyday situations, write simple connected texts and can briefly explain experiences, plans and opinions. Exams usually have listening, reading, writing and a speaking part, often with a partner. Exam centres set their own prices, which vary, so we do not quote a figure.</p>
 <p>If you are not sure whether the language proof is your last open point, enter your level in the calculator:</p>
-${h.mini('einb', { p: ['deutsch', 'titel', 'jahr'], d: { deutsch: 'a2' }, c: 'Check every requirement' })}
+${h.mini('einb', { p: ['deutsch', 'titel', 'jahr', 'monat'], d: { deutsch: 'a2' }, c: 'Check every requirement' })}
 <p>B1 is not a formal entry condition for the citizenship test, but it helps a lot, because the paper is in German only. Practising with the ${h.a('fragenkatalog', 'question catalogue')} also builds the vocabulary that many language exams test on society topics.</p>
 `,
   },

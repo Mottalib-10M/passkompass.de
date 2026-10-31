@@ -41,7 +41,7 @@ ${h.table(['Etappe', 'Was passiert', 'Worauf achten'], [
 <h2>Wer den Test nicht braucht</h2>
 <p>Befreit ist, wer die Kenntnisse wegen Krankheit, Behinderung oder Alters nicht erwerben kann (§ 10 Abs. 6 StAG), und wer jünger als 16 ist. Bei Menschen, die nur einfache mündliche Deutschkenntnisse nachweisen müssen, etwa frühere Gastarbeiter, verlangt das Gesetz den Test ebenfalls nicht. Ob ein deutscher Schulabschluss den Test ersetzt, entscheidet die Behörde; klären Sie das vor der Anmeldung. Die Sprachprüfung ist ein eigener Nachweis, siehe ${h.a('sprachnachweis', 'Sprachnachweis B1')}.</p>
 <p>Ob der Test Ihr letzter offener Punkt ist, zeigt die Prüfung der Voraussetzungen:</p>
-${h.mini('einb', { p: ['titel', 'jahr', 'test'], c: 'Alle Voraussetzungen prüfen' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'test'], c: 'Alle Voraussetzungen prüfen' })}
 `,
   },
   en: {
@@ -76,7 +76,7 @@ ${h.table(['Stage', 'What happens', 'Watch out for'], [
 <h2>Who does not need the test</h2>
 <p>You are exempt if illness, disability or age prevents you from acquiring the knowledge (section 10(6) StAG), and if you are under 16. People who only have to show basic spoken German, such as former guest workers, are not required to take it either. Whether a German school-leaving certificate replaces the test is up to the authority, so check before booking. The language certificate is a separate proof: see ${h.a('sprachnachweis', 'B1 German certificate')}.</p>
 <p>To see whether the test is your last open point, run the full requirements check:</p>
-${h.mini('einb', { p: ['titel', 'jahr', 'test'], c: 'Check every requirement' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'test'], c: 'Check every requirement' })}
 `,
   },
 });

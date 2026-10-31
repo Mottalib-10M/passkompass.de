@@ -1,6 +1,6 @@
 /** Declarative calculators (src/lib/tool-specs.ts), rendered by components/calc/SpecTool.tsx. */
 export type V = Record<string, number | string>;
-export interface NumIn { kind?: 'num'; id: string; label: string; def: number; unit?: string; max?: number; decimals?: number; help?: string; adv?: boolean; wide?: boolean }
+export interface NumIn { kind?: 'num'; id: string; label: string; def: number; unit?: string; max?: number; decimals?: number; plain?: boolean; help?: string; adv?: boolean; wide?: boolean }
 export interface ChoiceIn { kind: 'choice'; id: string; label: string; def: string; options: Array<{ value: string; label: string }>; help?: string; adv?: boolean; wide?: boolean }
 export type Opt = { value: string; label: string };
 /** Options can depend on the other fields (the counties of the chosen state). */

@@ -29,7 +29,7 @@ export default function MiniSim({ kind, lang, href, arg }: Props) {
         <form data-simulateur-secondaire className="grid min-w-0 grid-cols-[minmax(0,1fr)] content-start gap-y-3" onSubmit={(e) => e.preventDefault()}>
           {shown.map((i) => (i.kind === 'choice' || i.kind === 'select')
             ? <SelectField key={i.id} id={`m-${kind}-${i.id}`} label={i.label} value={String(rv[i.id])} onChange={set(i.id)} options={i.kind === 'select' ? optsOf(i, rv) : i.options} />
-            : <NumberField key={i.id} id={`m-${kind}-${i.id}`} label={i.label} value={Number(rv[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} lang={lang} />)}
+            : <NumberField key={i.id} id={`m-${kind}-${i.id}`} label={i.label} value={Number(rv[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} plain={i.plain} lang={lang} />)}
         </form>
         <div aria-live="polite" className="rounded-lg border-l-4 border-accent-500 bg-navy-50 p-4">
           <p className="text-sm font-medium text-navy-600">{out.label}</p>

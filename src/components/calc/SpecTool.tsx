@@ -42,7 +42,7 @@ export default function SpecTool({ kind, lang, arg, methodHref, idPrefix = 't' }
     const cls = i.wide ? 'sm:col-span-2' : '';
     if (i.kind === 'choice') return <div key={i.id} className={`grid grid-rows-subgrid row-span-3 ${cls}`}><Choice id={id} label={i.label} value={String(rv[i.id])} options={i.options} onChange={set(i.id)} /></div>;
     if (i.kind === 'select') return <SelectField key={i.id} id={id} label={i.label} value={String(rv[i.id])} onChange={set(i.id)} options={optsOf(i, rv)} help={i.help} className={cls} />;
-    return <NumberField key={i.id} id={id} label={i.label} value={Number(rv[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} help={i.help} className={cls} lang={lang} />;
+    return <NumberField key={i.id} id={id} label={i.label} value={Number(rv[i.id])} onChange={set(i.id)} unit={i.unit} max={i.max} decimals={i.decimals} plain={i.plain} help={i.help} className={cls} lang={lang} />;
   };
   const main = spec.inputs.filter((i) => !i.adv), adv = spec.inputs.filter((i) => i.adv);
   return (

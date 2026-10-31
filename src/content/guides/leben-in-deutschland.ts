@@ -43,7 +43,7 @@ ${stufen(h, ['Richtige Antworten', 'Was das Ergebnis bedeutet', 'Grundlage'], ['
 <h2>Gezielt lernen</h2>
 <p>Die Probeprüfung oben zieht wie die Verordnung ${h.n(T.fragen - T.landFragen)} allgemeine Fragen und ${h.n(T.landFragen)} Fragen zu Ihrem Bundesland. Alle allgemeinen Fragen mit Lösung stehen unter ${h.a('fragenkatalog', 'Einbürgerungstest Fragen')}, die Landesfragen auf den Seiten der Länder, etwa ${h.a('land-nw', 'Einbürgerungstest NRW')}. Der erfolgreiche Orientierungskurs belegt laut BAMF auch die Grundkenntnisse, die für die ${h.a('niederlassungserlaubnis', 'Niederlassungserlaubnis')} verlangt werden. Zum Zertifikat Integrationskurs fehlt dann nur noch die Sprachprüfung auf Niveau B1, siehe ${h.a('sprachnachweis', 'Sprachnachweis B1')}.</p>
 <p>Ob nach dem Kurs nur noch die Aufenthaltszeit fehlt, zeigt die Prüfung der Voraussetzungen:</p>
-${h.mini('einb', { p: ['jahr', 'deutsch', 'test'], d: { test: 'ja' }, c: 'Weg zur Einbürgerung prüfen' })}
+${h.mini('einb', { p: ['jahr', 'monat', 'deutsch', 'test'], d: { test: 'ja' }, c: 'Weg zur Einbürgerung prüfen' })}
 `,
   },
   en: {
@@ -71,7 +71,7 @@ ${stufen(h, ['Correct answers', 'What the score means', 'Legal basis'], ['Orient
 <h2>Studying with a plan</h2>
 <p>The mock exam above draws ${h.n(T.fragen - T.landFragen)} general questions and ${h.n(T.landFragen)} about your state, as the ordinance does. All general questions with answers are under ${h.a('fragenkatalog', 'citizenship test questions')}, and the state questions are on the state pages, such as ${h.a('land-nw', 'citizenship test NRW')}. BAMF notes that passing the orientation course also proves the basic knowledge required for a ${h.a('niederlassungserlaubnis', 'settlement permit')}. For the integration course certificate you then only need the B1 language exam: see ${h.a('sprachnachweis', 'B1 German certificate')}.</p>
 <p>To see whether only the residence period is left after the course, check the requirements:</p>
-${h.mini('einb', { p: ['jahr', 'deutsch', 'test'], d: { test: 'ja' }, c: 'Check your path to citizenship' })}
+${h.mini('einb', { p: ['jahr', 'monat', 'deutsch', 'test'], d: { test: 'ja' }, c: 'Check your path to citizenship' })}
 `,
   },
 });

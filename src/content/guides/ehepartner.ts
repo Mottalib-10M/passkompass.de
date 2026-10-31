@@ -42,7 +42,7 @@ ${h.table(['Situation', 'Aufenthalt', 'Ehe', 'Rechtsgrundlage'], [
 <p>Alle drei Fälle haben B1, Test und eigenes Einkommen. Der Rechner prüft beide Wege und gibt den früheren aus.</p>
 ${h.table(['Fall', 'In Deutschland seit', 'Heirat', 'Weg', 'Frist erfüllt ab'], rows(h), 'Frühester Monat, ab dem die Aufenthaltszeit erfüllt ist.', ['l', 'l', 'l', 'l', 'l'])}
 <p>Fall A hat schon vor der Einreise geheiratet; hier entscheiden die drei Jahre Aufenthalt. Fall B hat nach der Einreise geheiratet, und die zwei Ehejahre laufen länger als die drei Aufenthaltsjahre. Fall C lebt schon lange hier: Die fünf Jahre nach § 10 sind erfüllt, bevor die Ehe zwei Jahre alt ist.</p>
-${h.mini('einb', { p: ['ehe', 'jahr', 'ehejahr'], d: { ehe: 'ja', jahr: 2023, ehejahr: 2024 }, t: 'Ihr Antragsmonat als Ehepartner' })}
+${h.mini('einb', { p: ['ehe', 'jahr', 'monat', 'ehejahr'], d: { ehe: 'ja', jahr: 2023, ehejahr: 2024 }, t: 'Ihr Antragsmonat als Ehepartner' })}
 <h2>Niederlassungserlaubnis für Ehegatten von Deutschen</h2>
 <p>Bis zur Einbürgerung leben Sie mit einer Aufenthaltserlaubnis zum Familiennachzug. Nach ${h.src('aufenthg28', '§ 28 AufenthG')} gibt es nach ${h.n(N.ehegatteDeutschJahre)} Jahren in der Regel eine Niederlassungserlaubnis, wenn die familiäre Gemeinschaft fortbesteht und Deutsch auf Niveau B1 vorliegt. Für die Einbürgerung ist das nicht nötig, denn die Aufenthaltserlaubnis zum Familiennachzug ist kein ausgeschlossener Titel. Wer beides anstrebt, kann die Niederlassungserlaubnis überspringen; Vergleich unter ${h.a('niederlassungserlaubnis', 'Niederlassungserlaubnis')}.</p>
 <h2>Eingetragene Partnerschaft und Ehe im Ausland</h2>
@@ -76,7 +76,7 @@ ${h.table(['Situation', 'Residence', 'Marriage', 'Legal basis'], [
 <p>All three have B1, the test and their own income. The calculator checks both routes and returns the earlier one.</p>
 ${h.table(['Case', 'In Germany since', 'Married', 'Route', 'Period met from'], rows(h), 'Earliest month from which the residence period is met.', ['l', 'l', 'l', 'l', 'l'])}
 <p>Case A married before arriving, so the three years of residence decide. Case B married after arriving, and the two years of marriage run longer than the three years of residence. Case C has lived here a long time: the five years under section 10 are met before the marriage is two years old.</p>
-${h.mini('einb', { p: ['ehe', 'jahr', 'ehejahr'], d: { ehe: 'ja', jahr: 2023, ehejahr: 2024 }, t: 'Your month to apply as a spouse' })}
+${h.mini('einb', { p: ['ehe', 'jahr', 'monat', 'ehejahr'], d: { ehe: 'ja', jahr: 2023, ehejahr: 2024 }, t: 'Your month to apply as a spouse' })}
 <h2>Your residence permit until then</h2>
 <p>Until you naturalise, you live here on a family reunification permit. Under ${h.src('aufenthg28', 'section 28 of the Residence Act')} you normally get a settlement permit after ${h.n(N.ehegatteDeutschJahre)} years if the family unit continues and you have German at B1. You do not need it to naturalise, since the family permit is not an excluded title. If you are aiming for citizenship anyway, you can skip the settlement permit; compare on ${h.a('niederlassungserlaubnis', 'settlement permit')}.</p>
 <h2>Registered partnerships and marriages abroad</h2>

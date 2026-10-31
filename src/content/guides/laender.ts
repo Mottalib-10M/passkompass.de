@@ -411,7 +411,7 @@ ${h.fragen(ids)}
 ${t.de.erkl}
 <h2>Nach dem Test</h2>
 <p>Der Test ist eine von mehreren Bedingungen für den Antrag in ${L.de}. Wann die übrigen erfüllt sind, rechnet das Werkzeug aus:</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Alle Voraussetzungen prüfen' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Alle Voraussetzungen prüfen' })}
 <p>Die ${h.n(K.P.katalog.allgemein)} allgemeinen Fragen stehen im ${h.a('fragenkatalog', 'Fragenkatalog')}; zur Anmeldung siehe ${h.a('test-anmelden', 'Einbürgerungstest anmelden')}.</p>
 `,
     },
@@ -429,7 +429,7 @@ ${h.fragen(ids)}
 ${t.en.erkl}
 <h2>After the test</h2>
 <p>The test is one of several conditions for applying in ${L.en}. The tool works out when the others are met:</p>
-${h.mini('einb', { p: ['titel', 'jahr'], c: 'Check every requirement' })}
+${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Check every requirement' })}
 <p>The ${h.n(K.P.katalog.allgemein)} general questions are in the ${h.a('fragenkatalog', 'question catalogue')}; to book, see ${h.a('test-anmelden', 'booking the citizenship test')}.</p>
 `,
     },
