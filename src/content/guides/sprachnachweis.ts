@@ -15,7 +15,7 @@ export default defineGuide({
     title: 'Sprachnachweis B1 Einbürgerung 2026: welche Zertifikate',
     description: 'Sprachnachweis B1 für die Einbürgerung 2026: welche Prüfungen zählen, wann ein Schulabschluss reicht, Härtefälle, Ausnahmen für Kinder und frühere Gastarbeiter.',
     h1: 'Deutsch B1 für die Einbürgerung nachweisen',
-    intro: `Das Gesetz verlangt Deutsch auf Niveau ${E.sprache} des Europäischen Referenzrahmens, nachgewiesen durch eine Sprachprüfung. Es gibt Ausnahmen.`,
+    intro: `Für die Einbürgerung verlangt das Gesetz Deutsch auf Niveau ${E.sprache} des Europäischen Referenzrahmens, nachgewiesen durch eine Sprachprüfung. Es gibt Ausnahmen.`,
     resume: `Für die Einbürgerung verlangt § 10 Abs. 4 StAG ausreichende Deutschkenntnisse: Sie liegen vor, wenn Sie die Anforderungen einer Sprachprüfung der Stufe ${E.sprache} des Gemeinsamen Europäischen Referenzrahmens erfüllen, und zwar mündlich und schriftlich. Üblich ist ein Zertifikat einer anerkannten Prüfung, etwa der Deutsch-Test für Zuwanderer mit dem Ergebnis B1 am Ende des Integrationskurses, telc Deutsch B1, das Goethe-Zertifikat B1 oder eine ÖSD-Prüfung auf diesem Niveau. Ein höheres Zertifikat wie B2 oder C1 genügt natürlich auch. Viele Behörden erkennen außerdem einen deutschen Schulabschluss, eine Berufsausbildung oder ein Studium in deutscher Sprache an. Kinder unter 16 Jahren brauchen nur eine altersgemäße Sprachentwicklung. Frühere Gastarbeiter und Vertragsarbeiter sowie ihre Ehegatten müssen sich nur mündlich im Alltag verständigen können. Wer trotz ernsthafter Bemühungen B1 nicht erreichen kann, für den kann die Behörde die Anforderung ebenfalls auf den Alltag begrenzen; Krankheit, Behinderung oder Alter befreien ganz.`,
     faqs: [
       { q: 'Reicht der Deutsch-Test für Zuwanderer für die Einbürgerung?', a: 'Ja, wenn das Ergebnis B1 lautet. Der Test am Ende des Integrationskurses bescheinigt entweder A2 oder B1. Nur mit B1 ist die Voraussetzung erfüllt. Wer mit A2 abgeschlossen hat, kann die Prüfung wiederholen oder eine andere anerkannte B1-Prüfung ablegen, etwa telc oder Goethe.' },
@@ -23,7 +23,7 @@ export default defineGuide({
       { q: 'Muss ich auch schreiben können?', a: 'Ja, beim allgemeinen Nachweis zählt die Sprachprüfung als Ganzes, mit Hören, Lesen, Schreiben und Sprechen. Nur in den Sonderfällen des Gesetzes, also bei früheren Gastarbeitern und deren Ehegatten oder in Härtefällen, genügt die mündliche Verständigung im Alltag. Den Einbürgerungstest brauchen diese Gruppen dann ebenfalls nicht.' },
     ],
     body: (h) => `
-<h2>Was als Nachweis zählt</h2>
+<h2>Was als Sprachnachweis zählt</h2>
 <p>${h.src('stag10', '§ 10 Abs. 4 StAG')} stellt auf das Niveau ab, nicht auf eine bestimmte Prüfung. In der Praxis legen die meisten ein Zertifikat vor. Die folgende Übersicht zeigt die üblichen Wege; ob ein Schul- oder Berufsabschluss reicht, entscheidet die Behörde.</p>
 ${h.table(['Nachweis', 'Reicht für die Einbürgerung?', 'Hinweis'], [
   ['Deutsch-Test für Zuwanderer, Ergebnis B1', 'ja', 'Abschluss des Integrationskurses'],
@@ -48,7 +48,7 @@ ${h.mini('einb', { p: ['deutsch', 'titel', 'jahr', 'monat'], d: { deutsch: 'a2' 
     title: 'B1 German Certificate for Citizenship 2026: What Counts',
     description: 'B1 German certificate for citizenship in 2026: which exams count, when a German school certificate is enough, hardship cases and exemptions for children.',
     h1: 'Proving B1 German for citizenship',
-    intro: `The law requires German at level ${E.sprache} of the Common European Framework, proven by a language exam. There are exceptions.`,
+    intro: `For citizenship, the law requires German at level ${E.sprache} of the Common European Framework, proven by a language exam. There are exceptions.`,
     resume: `For naturalisation, section 10(4) StAG requires sufficient German: you have it if you meet the requirements of a language exam at level ${E.sprache} of the Common European Framework of Reference, spoken and written. The usual proof is a certificate from a recognised exam, such as the German Test for Immigrants (DTZ) with a B1 result at the end of the integration course, telc Deutsch B1, the Goethe-Zertifikat B1 or an ÖSD exam at that level. A higher certificate such as B2 or C1 obviously also counts. Many authorities also accept a German school-leaving certificate, vocational training or a degree completed in German. Children under 16 only need age-appropriate language development. Former guest workers and contract workers and their spouses only have to communicate orally in everyday life. If someone cannot reach B1 despite serious efforts, the authority can also limit the requirement to everyday German; illness, disability or age exempt you entirely.`,
     faqs: [
       { q: 'Is the German Test for Immigrants (DTZ) enough for citizenship?', a: 'Yes, if the result is B1. The test at the end of the integration course certifies either A2 or B1, and only B1 meets the requirement. If you finished with A2, you can retake it or sit another recognised B1 exam, such as telc or Goethe.' },
@@ -56,7 +56,7 @@ ${h.mini('einb', { p: ['deutsch', 'titel', 'jahr', 'monat'], d: { deutsch: 'a2' 
       { q: 'Do I also need to be able to write German?', a: 'Yes. For the standard proof, the exam counts as a whole: listening, reading, writing and speaking. Only in the special cases of the law, meaning former guest workers and their spouses or hardship cases, is everyday spoken German enough, and those groups then do not need the citizenship test either.' },
     ],
     body: (h) => `
-<h2>What counts as proof</h2>
+<h2>Which German certificate counts as proof</h2>
 <p>${h.src('stag10', 'Section 10(4) StAG')} refers to the level, not to a specific exam. In practice most people submit a certificate. The overview shows the usual routes; whether a school or vocational qualification is enough is up to the authority.</p>
 ${h.table(['Proof', 'Enough for citizenship?', 'Note'], [
   ['German Test for Immigrants, result B1', 'yes', 'End of the integration course'],

@@ -22,7 +22,7 @@ export default defineGuide({
     title: 'Einbürgerung Kosten 2026: Gebühren für die ganze Familie',
     description: `Einbürgerung Kosten 2026: ${G.einbuergerung} € pro Erwachsenem, ${G.kind} € pro Kind ohne Einkommen, ${T.gebuehr} € für den Test. Rechner für die Familie, Ermäßigung, Gebühr bei Ablehnung.`,
     h1: 'Was kostet die Einbürgerung?',
-    intro: `Zahl der Erwachsenen, Kinder und Tests eingeben: Der Rechner addiert die gesetzlichen Gebühren für die ganze Familie.`,
+    intro: `Zahl der Erwachsenen, Kinder und Tests eingeben: Der Rechner addiert die gesetzlichen Gebühren der Einbürgerung für die ganze Familie.`,
     resume: `Die Einbürgerung kostet nach § 38 des Staatsangehörigkeitsgesetzes ${G.einbuergerung} € pro Person. Für ein minderjähriges Kind, das zusammen mit einem Elternteil eingebürgert wird und kein eigenes Einkommen hat, sind es ${G.kind} €. Hinzu kommt für jede Person ab 16 Jahren, die den Einbürgerungstest ablegt, die Prüfungsgebühr von ${T.gebuehr} €. Eine Familie mit zwei Erwachsenen und zwei Kindern zahlt damit ${FAM[2].r.gesamt} € an Gebühren, wenn beide Erwachsenen den Test machen. Nicht gesetzlich festgelegt und deshalb hier nicht beziffert sind die Preise für die Sprachprüfung, für beglaubigte Übersetzungen und für Urkunden aus dem Herkunftsland; sie hängen vom Anbieter und vom Land ab. Die Behörde kann die Gebühr aus Gründen der Billigkeit oder des öffentlichen Interesses ermäßigen oder ganz erlassen. Wird der Antrag abgelehnt oder zurückgenommen, nachdem die Bearbeitung begonnen hat, kann eine Gebühr zwischen ${G.ablehnungMin} € und der vollen Gebühr anfallen.`,
     faqs: [
       { q: 'Wann muss ich die Einbürgerungsgebühr bezahlen?', a: 'Das regelt jede Behörde selbst. Viele verlangen die Gebühr mit dem Antrag oder kurz danach, andere erst vor der Aushändigung der Urkunde. In Berlin wird sie zum Beispiel mit der Antragstellung fällig und bei einer Ablehnung nicht erstattet. Fragen Sie bei Ihrer Behörde nach und heben Sie den Zahlungsbeleg für die Akte auf.' },
@@ -57,7 +57,7 @@ ${h.mini('kosten', { p: ['erw', 'kind', 'test'], d: { erw: 2, kind: 1, test: 2 }
     title: 'Citizenship Fees in Germany 2026: Cost for the Whole Family',
     description: `German citizenship fees 2026: €${G.einbuergerung} per adult, €${G.kind} per child without income, €${T.gebuehr} for the test. Family calculator, fee reductions and the charge if refused.`,
     h1: 'How much does German citizenship cost?',
-    intro: 'Enter the number of adults, children and tests: the calculator adds up the statutory fees for your whole family.',
+    intro: 'Enter the number of adults, children and tests: the calculator adds up the statutory citizenship fees for your whole family.',
     resume: `Under section 38 of the Nationality Act, naturalisation costs €${G.einbuergerung} per person. For a minor child naturalised together with a parent and without income of its own, the fee is €${G.kind}. On top of that, everyone aged 16 or over who sits the citizenship test pays the exam fee of €${T.gebuehr}. A family of two adults and two children therefore pays €${FAM[2].r.gesamt} in fees if both adults take the test. Prices for the language exam, certified translations and documents from your country of origin are not set by law, so we do not quote them; they depend on the provider and the country. The authority may reduce or waive the fee on grounds of fairness or public interest. If the application is refused or withdrawn after processing has started, a fee between €${G.ablehnungMin} and the full amount may be charged.`,
     faqs: [
       { q: 'When do I pay the naturalisation fee?', a: 'Each authority decides. Many ask for the fee with the application or shortly after, others only before handing over the certificate. In Berlin, for example, it is due when you apply and is not refunded if the application is refused. Ask your authority and keep the payment receipt for your file.' },
@@ -65,7 +65,7 @@ ${h.mini('kosten', { p: ['erw', 'kind', 'test'], d: { erw: 2, kind: 1, test: 2 }
       { q: 'Does a child with its own income pay more?', a: `Yes. The reduced fee of €${G.kind} only applies to minor children without income who are naturalised with a parent. A child earning an apprenticeship wage or from a mini-job generally pays the full €${G.einbuergerung}; enter such a child under the extra fields of the calculator. Adult children file their own application.` },
     ],
     body: (h) => `
-<h2>The fees set by law</h2>
+<h2>The citizenship fees set by law</h2>
 <p>${h.src('stag38', 'Section 38 StAG')} sets the fees for all nationality procedures. Naturalisation has two amounts: the full fee and the reduced one for children naturalised with a parent. Confirming whether someone is already German costs ${h.eur(G.feststellung)}, and certificates range from ${h.eur(G.bescheinigungMin)} to ${h.eur(G.bescheinigungMax)}. The test is not part of the authority’s procedure; its fee is set by the ${h.src('einbtestv', 'Citizenship Test Ordinance')}.</p>
 ${h.table(['Item', 'Amount', 'Legal basis'], [
   ['Naturalisation, per person', h.eur(G.einbuergerung), 'Section 38(2) StAG'],

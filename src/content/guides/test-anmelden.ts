@@ -25,7 +25,7 @@ export default defineGuide({
       { q: 'Kann ich den Einbürgerungstest online mit Zertifikat machen?', a: 'Nein. Nach § 1 Abs. 3 der Einbürgerungstestverordnung ist der Test nur bestanden, wenn Sie ihn unter Aufsicht ablegen, und nur dann stellt das BAMF die Bescheinigung aus. Online gibt es Übungstests, auch beim BAMF selbst und auf dieser Seite, aber keiner davon ersetzt die Prüfung vor Ort. Angebote, die ein Zertifikat für einen Online-Test versprechen, bringen Ihnen bei der Behörde nichts.' },
     ],
     body: (h) => `
-<h2>Schritt für Schritt zur Prüfung</h2>
+<h2>Schritt für Schritt zum Einbürgerungstest</h2>
 <p>Erster Schritt ist die Prüfstelle. Die ${h.src('einbtestv', 'Einbürgerungstestverordnung')} legt fest, dass das BAMF den Test durchführt und dafür Stellen zulässt; welche das in Ihrer Stadt sind, erfahren Sie bei der Volkshochschule, beim Integrationskursträger oder bei der Einbürgerungsbehörde. Die Anmeldung läuft schriftlich oder vor Ort. Sie geben Ihre Daten und das Bundesland an, in dem Sie wohnen, denn danach richten sich ${h.n(T.landFragen)} der ${h.n(T.fragen)} Fragen.</p>
 <p>Zweiter Schritt ist die Gebühr. Sie beträgt ${h.eur(T.gebuehr)} und wird bei der Anmeldung fällig. Andere Preise, die man im Netz liest, betreffen meist Vorbereitungskurse, nicht den Test selbst. Ein Kurs ist nach ${h.src('stag10', '§ 10 Abs. 5 StAG')} freiwillig; wer mit den Fragen auf dieser Seite übt, braucht keinen.</p>
 ${h.table(['Etappe', 'Was passiert', 'Worauf achten'], [
@@ -50,7 +50,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'test'], c: 'Alle Voraussetzung
     title: 'Booking the German Citizenship Test 2026: Fee and Steps',
     description: `Booking the German citizenship test in 2026: where to register, the €${T.gebuehr} fee, what to bring, how the ${T.minuten}-minute exam runs and how your result reaches you.`,
     h1: 'Booking and sitting the German citizenship test',
-    intro: `Register with an approved test centre, pay €${T.gebuehr}, answer ${T.fragen} questions in ${T.minuten} minutes. Take the mock exam here first.`,
+    intro: `To book the German citizenship test, register with an approved test centre and pay €${T.gebuehr}; then answer ${T.fragen} questions in ${T.minuten} minutes. Take the mock exam here first.`,
     resume: `You do not sit the citizenship test at the naturalisation authority but at a test centre approved by the Federal Office for Migration and Refugees (BAMF), usually an adult education centre (Volkshochschule) or an integration course provider. You register there, pay the fee of €${T.gebuehr} set by section 2 of the Citizenship Test Ordinance and get a date. On the day you show valid ID, answer ${T.fragen} questions under supervision within ${T.minuten} minutes and tick your answers on a sheet. With at least ${T.bestehen} correct answers you pass. BAMF marks the papers and posts you a certificate, which you attach to your naturalisation application. If you fail, you can retake the test as often as you need, paying the fee each time. The exam is only in German, so practise with the German wording; a mock exam before booking shows whether you are ready.`,
     faqs: [
       { q: 'Where do I register for the German citizenship test?', a: 'At a test centre approved by BAMF, often a Volkshochschule or an integration course provider near you. Your naturalisation authority can name centres, and BAMF runs a search for course providers on its website. Ask about available dates when you register, because many centres only hold the test on a few days each month.' },
@@ -60,7 +60,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'test'], c: 'Alle Voraussetzung
       { q: 'Can I take the citizenship test online and get a certificate?', a: 'No. Under section 1(3) of the Citizenship Test Ordinance, the test only counts if you sit it under supervision, and only then does BAMF issue the certificate. Practice tests exist online, from BAMF itself and on this site, but none of them replaces the exam at a test centre. Offers promising a certificate for an online test are worth nothing to the authority.' },
     ],
     body: (h) => `
-<h2>Step by step to the exam</h2>
+<h2>Booking the citizenship test step by step</h2>
 <p>The first step is the test centre. The ${h.src('einbtestv', 'Citizenship Test Ordinance')} has BAMF run the test through approved centres; to find those in your town, ask the Volkshochschule, an integration course provider or the naturalisation authority. You register in writing or in person, giving your details and the federal state where you live, because ${h.n(T.landFragen)} of the ${h.n(T.fragen)} questions depend on it.</p>
 <p>The second step is the fee: ${h.eur(T.gebuehr)}, payable when you register. Higher prices you may see online are usually for preparation courses, not the test itself. Under ${h.src('stag10', 'section 10(5) StAG')} a course is optional; if you practise with the questions on this site, you do not need one.</p>
 ${h.table(['Stage', 'What happens', 'Watch out for'], [

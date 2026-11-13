@@ -15,7 +15,7 @@ export default defineGuide({
     title: 'Doppelte Staatsbürgerschaft 2026: welche Länder, was gilt',
     description: 'Doppelte Staatsbürgerschaft 2026: Bei der Einbürgerung verlangt Deutschland nicht mehr die Aufgabe der alten Staatsangehörigkeit. Was das Herkunftsland regelt.',
     h1: 'Doppelte Staatsbürgerschaft in Deutschland nach der Reform',
-    intro: 'Das deutsche Recht verlangt die Aufgabe der alten Staatsangehörigkeit nicht mehr. Ob Sie sie behalten, entscheidet Ihr Herkunftsland.',
+    intro: 'Das deutsche Recht erlaubt die doppelte Staatsbürgerschaft und verlangt die Aufgabe der alten Staatsangehörigkeit nicht mehr. Ob Sie sie behalten, entscheidet Ihr Herkunftsland.',
     resume: `Seit der Reform des Staatsangehörigkeitsrechts von 2024 nimmt Deutschland Mehrstaatigkeit grundsätzlich hin. Die frühere Bedingung, die bisherige Staatsangehörigkeit aufzugeben oder zu verlieren, ist aus § 10 StAG gestrichen; die Ausnahmen dazu in § 12 sind deshalb ebenfalls weggefallen. Umgekehrt verlieren Deutsche ihre Staatsangehörigkeit nicht mehr automatisch, wenn sie eine ausländische annehmen, denn § 25 ist aufgehoben. Auch die Optionspflicht für in Deutschland geborene Kinder ausländischer Eltern nach § 29 gibt es nicht mehr. Für Sie bedeutet das: Die Einbürgerungsbehörde fragt nicht mehr nach einer Entlassungsurkunde oder Verzichtserklärung. Ob Sie Ihre bisherige Staatsangehörigkeit tatsächlich behalten, regelt aber allein das Recht Ihres Herkunftsstaates. Manche Staaten entziehen sie beim freiwilligen Erwerb einer anderen automatisch, andere verlangen eine Genehmigung oder Meldung. Klären Sie das vor dem Antrag mit dem Konsulat Ihres Landes.`,
     faqs: [
       { q: 'Muss ich meinen alten Pass bei der Einbürgerung abgeben?', a: 'Nach deutschem Recht nicht. Die Bedingung, die bisherige Staatsangehörigkeit aufzugeben, ist aus dem Staatsangehörigkeitsgesetz gestrichen. Ihr ausländischer Pass bleibt ein Dokument Ihres Herkunftsstaates; ob er gültig bleibt, entscheidet dieser Staat. Bei der Einreise nach Deutschland weisen Sie sich nach der Einbürgerung mit dem deutschen Pass oder Personalausweis aus.' },
@@ -24,7 +24,7 @@ export default defineGuide({
       { q: 'Mit welchen Ländern ist die doppelte Staatsbürgerschaft möglich?', a: 'Aus deutscher Sicht mit jedem Land: Seit der Reform verlangt das Staatsangehörigkeitsgesetz bei keiner Herkunft mehr, die alte Staatsangehörigkeit aufzugeben, ob EU-Staat, Türkei, Syrien oder ein anderes Land. Ob Sie Ihre bisherige behalten, entscheidet allein das Recht des anderen Staates. Fragen Sie dessen Konsulat schriftlich, bevor Sie die Urkunde entgegennehmen, und bewahren Sie die Antwort auf.' },
     ],
     body: (h) => `
-<h2>Was das Gesetz heute sagt</h2>
+<h2>Doppelte Staatsbürgerschaft: was das Gesetz heute sagt</h2>
 <p>Drei Vorschriften haben früher die doppelte Staatsbürgerschaft eingeschränkt, alle drei sind heute auf gesetze-im-internet.de als „weggefallen“ markiert. ${h.src('stag10', '§ 10 Abs. 1 Nr. 4 StAG')} verlangte, die alte Staatsangehörigkeit aufzugeben; ${h.src('stag12', '§ 12')} regelte, wann davon abgesehen wurde, etwa für EU-Bürger oder wenn der Herkunftsstaat nicht entließ. ${h.src('stag25', '§ 25')} nahm Deutschen die Staatsangehörigkeit, wenn sie auf Antrag eine fremde erwarben, außer mit Beibehaltungsgenehmigung. ${h.src('stag29', '§ 29')} verpflichtete in Deutschland geborene Kinder ausländischer Eltern, sich unter Umständen für eine Staatsangehörigkeit zu entscheiden.</p>
 ${h.table(['Regel', 'Früher', 'Heute'], [
   ['Einbürgerung', 'Alte Staatsangehörigkeit aufgeben, mit vielen Ausnahmen', 'Keine Aufgabe nötig'],
@@ -46,7 +46,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Alle Voraussetzungen prüf
     title: 'Dual Citizenship in Germany 2026: Keeping Your Nationality',
     description: 'German dual citizenship in 2026: you no longer have to give up your old nationality to naturalise. What German law says now and what your home country decides.',
     h1: 'Dual citizenship after the reform',
-    intro: 'German law no longer requires you to give up your old nationality. Whether you keep it is up to your country of origin.',
+    intro: 'German law now allows dual citizenship and no longer requires you to give up your old nationality. Whether you keep it is up to your country of origin.',
     resume: `Since the 2024 reform of nationality law, Germany accepts multiple nationality as a rule. The former condition of giving up or losing your previous nationality has been deleted from section 10 StAG, and the exceptions to it in section 12 have gone with it. In the other direction, Germans no longer automatically lose their nationality when they take up a foreign one, because section 25 has been repealed. The duty to choose a nationality for children born in Germany to foreign parents, under section 29, has also been abolished. In practice, the naturalisation authority no longer asks for a release certificate or a renunciation. Whether you actually keep your previous nationality, however, is governed solely by the law of your country of origin. Some countries withdraw it automatically when a person voluntarily acquires another, others require permission or notification. Check with your country’s consulate before you apply.`,
     faqs: [
       { q: 'Do I have to hand in my old passport when I naturalise?', a: 'Not under German law. The condition of giving up your previous nationality has been removed from the Nationality Act. Your foreign passport remains a document of your country of origin, and whether it stays valid is that country’s decision. After naturalising, you use your German passport or ID card when entering Germany.' },
@@ -55,7 +55,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], c: 'Alle Voraussetzungen prüf
       { q: 'Which countries allow dual citizenship with Germany?', a: 'From the German side, every country: since the reform the Nationality Act no longer asks anyone to give up their previous nationality, whether they come from an EU state, Turkey, Syria or anywhere else. Whether you keep your old one is decided only by the other country’s law. Ask its consulate in writing before you receive your certificate, and keep the reply.' },
     ],
     body: (h) => `
-<h2>What the law says today</h2>
+<h2>Dual citizenship: what the law says today</h2>
 <p>Three provisions used to restrict dual citizenship, and all three are now marked “weggefallen” (repealed) on gesetze-im-internet.de. ${h.src('stag10', 'Section 10(1) no. 4 StAG')} required you to give up your old nationality, and ${h.src('stag12', 'section 12')} set out when that was waived, for example for EU citizens or where the other country would not release you. ${h.src('stag25', 'Section 25')} stripped Germans of their nationality if they applied for a foreign one, unless they held a retention permit. ${h.src('stag29', 'Section 29')} obliged some children born in Germany to foreign parents to choose one nationality.</p>
 ${h.table(['Rule', 'Before', 'Now'], [
   ['Naturalisation', 'Give up old nationality, with many exceptions', 'No renunciation needed'],

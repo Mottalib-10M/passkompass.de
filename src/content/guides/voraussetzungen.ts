@@ -34,7 +34,7 @@ export default defineGuide({
     title: 'Einbürgerung Voraussetzungen 2026: Rechner für den Antrag',
     description: `Einbürgerung Voraussetzungen 2026: ${E.jahre} Jahre Aufenthalt, B1, Test, Lebensunterhalt nach § 10 StAG. Der Rechner nennt den frühesten Antragsmonat und was fehlt.`,
     h1: 'Einbürgerung: Voraussetzungen prüfen',
-    intro: `Aufenthaltstitel und Einreisemonat eingeben: Der Rechner zeigt, ab wann die ${E.jahre} Jahre erfüllt sind und welche Nachweise noch fehlen.`,
+    intro: `Aufenthaltstitel und Einreisemonat eingeben: Der Rechner zeigt, ab wann die ${E.jahre} Jahre erfüllt sind und welche Nachweise für die Einbürgerung noch fehlen.`,
     resume: `Einen Anspruch auf Einbürgerung nach § 10 des Staatsangehörigkeitsgesetzes hat, wer seit ${E.jahre} Jahren rechtmäßig seinen gewöhnlichen Aufenthalt in Deutschland hat und dazu sieben Bedingungen erfüllt: ein Bekenntnis zur freiheitlichen demokratischen Grundordnung und zur historischen Verantwortung Deutschlands, ein passender Aufenthaltstitel, ein Lebensunterhalt ohne Bürgergeld oder Sozialhilfe, keine Verurteilung über den Grenzen des § 12a, Deutsch auf Niveau ${E.sprache}, ein bestandener Einbürgerungstest und eine geklärte Identität. Ehegatten von Deutschen können nach § 9 schon nach ${E.ehegatteJahre} Jahren Aufenthalt und ${E.eheJahre} Jahren Ehe eingebürgert werden. Die Einbürgerung nach ${turbo.jahre} Jahren bei besonderen Integrationsleistungen gibt es seit dem ${K.P.einb.turbo.aufgehoben.split('-').reverse().join('.')} nicht mehr. Die Aufgabe der bisherigen Staatsangehörigkeit verlangt das Gesetz nicht mehr. Wer zum Beispiel im September 2021 mit einer Arbeitserlaubnis eingereist ist, B1 und den Test hat und von seinem Lohn lebt, kann den Antrag seit ${h0.my(A.r.fristAb)} stellen.`,
     faqs: [
       { q: 'Zählt die Zeit als Student für die fünf Jahre Aufenthalt?', a: 'Ja. Die fünf Jahre beziehen sich auf den rechtmäßigen gewöhnlichen Aufenthalt, nicht auf einen bestimmten Titel. Zeiten mit einer Aufenthaltserlaubnis zum Studium zählen mit. Im Moment des Antrags darf man aber keinen Studientitel mehr haben, weil das Gesetz diesen Titel für die Einbürgerung ausschließt; nötig ist dann etwa eine Erlaubnis für Arbeit oder eine Niederlassungserlaubnis.' },
@@ -73,7 +73,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
     title: 'Citizenship Requirements Germany 2026: When You Can Apply',
     description: `German citizenship requirements 2026: ${E.jahre} years’ residence, B1 German, the test, livelihood. Get your earliest month to apply and see what is still missing.`,
     h1: 'German citizenship: check the requirements',
-    intro: `Enter your residence title and the month you arrived: the calculator shows when the ${E.jahre} years are met and which proofs are still missing.`,
+    intro: `Enter your residence title and the month you arrived: the calculator checks the citizenship requirements, shows when the ${E.jahre} years are met and which proofs are still missing.`,
     resume: `You are entitled to naturalise under section 10 of the Nationality Act (StAG) after ${E.jahre} years of lawful habitual residence in Germany, provided you meet seven further conditions: a commitment to the free democratic basic order and to Germany’s historical responsibility, a qualifying residence title, a livelihood without basic income support or social assistance, no conviction beyond the limits of section 12a, German at level ${E.sprache}, a passed citizenship test and a clarified identity. Spouses of Germans can naturalise under section 9 after ${E.ehegatteJahre} years of residence and ${E.eheJahre} years of marriage. The three-year route for exceptional integration was abolished on ${h0e.day(turbo.aufgehoben)}. You no longer have to give up your previous nationality. Someone who arrived in September 2021 on a work permit, has B1 and the test and lives on their own income has been able to apply since ${h0e.my(A.r.fristAb)}.`,
     faqs: [
       { q: 'Does time as a student count towards the five years?', a: 'Yes. The five years refer to lawful habitual residence, not to a particular permit, so years on a student permit count. At the moment you apply, though, you cannot still hold a student permit, because the law excludes that title from naturalisation; you need, for example, a work permit or a settlement permit by then.' },
@@ -82,7 +82,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
       { q: 'Can I naturalise while receiving Bürgergeld?', a: `Normally not. People receiving basic income support or social assistance do not meet the livelihood condition. Exceptions cover former guest workers and contract workers, people who worked full time for at least ${E.vollzeitMonate} of the last ${E.vollzeitVon} months, and their spouses living with them and a minor child. Housing benefit and child benefit are not counted as such benefits.` },
     ],
     body: (h) => `
-<h2>The requirements at a glance</h2>
+<h2>German citizenship requirements at a glance</h2>
 <p>${h.src('stag10', 'Section 10 StAG')} lists the conditions that must all be met for an entitlement. If one is missing, discretionary naturalisation under section 8 remains possible, with stricter standards. The table shows each condition and the proof authorities usually ask for.</p>
 ${h.table(['Requirement', 'What the law asks', 'Usual proof'], [
   ['Residence', `${h.n(E.jahre)} years, lawful and habitual`, 'Registration certificate, permits of recent years'],
@@ -112,7 +112,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
     title: 'Almanya vatandaşlığı şartları 2026: başvuru hesaplayıcı',
     description: `Almanya vatandaşlığı şartları 2026: ${E.jahre} yıl ikamet, B1 Almanca, vatandaşlık testi, geçim. Hesaplayıcı en erken başvuru ayınızı ve eksik kalan şartları gösterir.`,
     h1: 'Almanya vatandaşlığı: şartları kontrol edin',
-    intro: `Oturum belgenizi ve Almanya’ya geldiğiniz ayı girin: hesaplayıcı ${E.jahre} yılın ne zaman dolduğunu ve hangi belgelerin eksik olduğunu gösterir.`,
+    intro: `Oturum belgenizi ve Almanya’ya geldiğiniz ayı girin: hesaplayıcı vatandaşlık şartlarını kontrol eder, ${E.jahre} yılın ne zaman dolduğunu ve hangi belgelerin eksik olduğunu gösterir.`,
     resume: `Alman Vatandaşlık Kanunu’nun (StAG) 10. maddesine göre Almanya’da ${E.jahre} yıl yasal ve sürekli ikamet eden kişi, yedi şartı daha karşılıyorsa vatandaşlığa hak kazanır: özgür demokratik düzene ve Almanya’nın tarihsel sorumluluğuna bağlılık beyanı, uygun bir oturum belgesi, Bürgergeld veya sosyal yardım almadan geçim, 12a. maddedeki sınırları aşan bir mahkûmiyetin olmaması, ${E.sprache} seviyesinde Almanca, geçilmiş vatandaşlık testi ve açıklığa kavuşmuş kimlik. Bir Alman vatandaşıyla evli olanlar 9. maddeye göre ${E.ehegatteJahre} yıl ikamet ve ${E.eheJahre} yıl evlilikten sonra başvurabilir. Özel uyum başarısıyla üç yılda vatandaşlık yolu ${h0t.day(turbo.aufgehoben)} tarihinde kaldırıldı. Kanun artık eski vatandaşlıktan çıkmayı şart koşmuyor. Örneğin Eylül 2021’de çalışma izniyle gelen, B1 belgesi ve testi olan ve maaşıyla geçinen biri ${h0t.my(A.r.fristAb)} ayından beri başvurabilir. Hesaplayıcı bu tarihi sizin için hesaplar ve eksik kalan belgeleri tek tek gösterir.`,
     faqs: [
       { q: 'Öğrencilik yılları beş yıla sayılır mı?', a: 'Evet. Beş yıl, belirli bir oturum türüne değil yasal ve sürekli ikamete bağlıdır; öğrenci oturumuyla geçen yıllar da sayılır. Ancak başvuru anında hâlâ öğrenci oturumunuz olmamalıdır, çünkü kanun bu oturum türünü vatandaşlık için hariç tutar. O zamana kadar örneğin çalışma oturumuna veya süresiz oturuma geçmeniz gerekir.' },
@@ -120,7 +120,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
       { q: 'Bürgergeld alırken vatandaş olabilir miyim?', a: `Kural olarak hayır. Bürgergeld veya sosyal yardım alan kişi geçim şartını karşılamaz. İstisnalar: eski misafir işçiler ve sözleşmeli işçiler, son ${E.vollzeitVon} ayın en az ${E.vollzeitMonate} ayında tam zamanlı çalışmış olanlar ve bunlarla ve reşit olmayan bir çocukla birlikte yaşayan eşleri. Konut yardımı (Wohngeld) ve çocuk parası (Kindergeld) bu yardımlardan sayılmaz.` },
     ],
     body: (h) => `
-<h2>Şartlara genel bakış</h2>
+<h2>Almanya vatandaşlığı şartlarına genel bakış</h2>
 <p>${h.src('stag10', 'StAG 10. madde')} hak doğuran vatandaşlık için birlikte karşılanması gereken şartları sayar. Biri eksikse, daha sıkı ölçütlere bağlı takdire dayalı vatandaşlık (8. madde) kalır. Tablo her şartı ve makamın genellikle istediği belgeyi gösterir.</p>
 ${h.table(['Şart', 'Kanun ne istiyor', 'Genel belge'], [
   ['İkamet', `${h.n(E.jahre)} yıl yasal ve sürekli`, 'Adres kaydı (Meldebescheinigung), oturum belgeleri'],
@@ -147,7 +147,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
     title: 'شروط الجنسية الألمانية 2026: حاسبة موعد تقديم الطلب',
     description: `شروط الجنسية الألمانية 2026: إقامة ${E.jahre} سنوات، ألمانية B1، اختبار الجنسية، الإعالة. تعرض الحاسبة المجانية أقرب شهر لتقديم طلبك والشروط التي ما زالت ناقصة لديك.`,
     h1: 'الجنسية الألمانية: تحقق من الشروط',
-    intro: `أدخل نوع إقامتك وشهر قدومك إلى ألمانيا: تعرض الحاسبة متى تكتمل السنوات ${E.jahre} وما الوثائق التي ما زالت ناقصة.`,
+    intro: `أدخل نوع إقامتك وشهر قدومك إلى ألمانيا: تتحقق الحاسبة من شروط الجنسية الألمانية، وتعرض متى تكتمل السنوات ${E.jahre} وما الوثائق التي ما زالت ناقصة.`,
     resume: `وفق المادة 10 من قانون الجنسية الألماني (StAG) يحق التجنس لمن أقام في ألمانيا إقامة قانونية معتادة مدة ${E.jahre} سنوات، إذا استوفى سبعة شروط أخرى: الالتزام بالنظام الديمقراطي الحر وبالمسؤولية التاريخية لألمانيا، وتصريح إقامة مناسب، وإعالة النفس دون Bürgergeld أو مساعدة اجتماعية، وعدم وجود إدانة تتجاوز حدود المادة 12a، ولغة ألمانية بمستوى ${E.sprache}، واجتياز اختبار التجنس، وهوية واضحة. ويمكن لأزواج المواطنين الألمان التجنس وفق المادة 9 بعد ${E.ehegatteJahre} سنوات إقامة و${E.eheJahre} سنتين من الزواج. أُلغي طريق التجنس بعد ثلاث سنوات بسبب إنجازات اندماج خاصة في ${h0a.day(turbo.aufgehoben)}. ولم يعد القانون يشترط التخلي عن الجنسية السابقة. فمن قدم مثلًا في سبتمبر 2021 بتصريح عمل، ولديه B1 والاختبار، ويعيش من راتبه، يمكنه التقديم منذ ${h0a.my(A.r.fristAb)}. وتحسب الحاسبة هذا التاريخ لحالتك وتعرض الوثائق التي ما زالت ناقصة واحدة تلو الأخرى.`,
     faqs: [
       { q: 'هل تُحتسب سنوات الدراسة ضمن السنوات الخمس؟', a: 'نعم. ترتبط السنوات الخمس بالإقامة القانونية المعتادة لا بنوع معين من التصاريح، لذلك تُحتسب سنوات الإقامة الدراسية. لكن عند تقديم الطلب يجب ألا تكون ما زلت تحمل إقامة دراسة، لأن القانون يستثني هذا النوع من التجنس؛ وتحتاج حينها مثلًا إلى إقامة عمل أو إقامة دائمة.' },
@@ -155,7 +155,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat'], d: { jahr: 2023, monat: '2' },
       { q: 'هل يمكنني التجنس وأنا أتلقى Bürgergeld؟', a: `عادةً لا. من يتلقى Bürgergeld أو مساعدة اجتماعية لا يستوفي شرط الإعالة. الاستثناءات: العمال الضيوف والعمال المتعاقدون سابقًا، ومن عمل بدوام كامل ${E.vollzeitMonate} شهرًا على الأقل من آخر ${E.vollzeitVon} شهرًا، وأزواجهم الذين يعيشون معهم ومع طفل قاصر. ولا تُعد إعانة السكن (Wohngeld) ولا إعانة الأطفال (Kindergeld) من هذه المساعدات.` },
     ],
     body: (h) => `
-<h2>الشروط باختصار</h2>
+<h2>شروط الجنسية الألمانية باختصار</h2>
 <p>تعدد ${h.src('stag10', 'المادة 10 من قانون الجنسية')} الشروط التي يجب أن تجتمع كلها ليثبت الحق في التجنس. إذا نقص أحدها يبقى التجنس التقديري وفق المادة 8، وهو أصعب. يبين الجدول كل شرط والوثيقة التي تطلبها السلطة عادةً.</p>
 ${h.table(['الشرط', 'ما يطلبه القانون', 'الوثيقة المعتادة'], [
   ['الإقامة', `${h.n(E.jahre)} سنوات قانونية ومعتادة`, 'شهادة تسجيل السكن، تصاريح الإقامة'],

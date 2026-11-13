@@ -16,7 +16,7 @@ const de: HomeLang = {
   title: 'Einbürgerungstest 2026: alle 310 Fragen und Probetest',
   description: 'Einbürgerungstest 2026 online üben: Probeprüfung mit 33 Fragen wie im Test, alle 310 Fragen mit Lösung, jedes Bundesland, dazu frühester Antrag und Kosten.',
   h1: 'Einbürgerungstest online üben',
-  intro: `${T.fragen} Fragen wie in der echten Prüfung, davon ${T.landFragen} zu Ihrem Bundesland. Antwort anklicken, sofort sehen, ob sie stimmt.`,
+  intro: `${T.fragen} Fragen wie im echten Einbürgerungstest, davon ${T.landFragen} zu Ihrem Bundesland. Antwort anklicken, sofort sehen, ob sie stimmt.`,
   resume: `Der Einbürgerungstest, inhaltlich gleich dem Test „Leben in Deutschland“, besteht aus ${T.fragen} Fragen mit je vier Antworten: ${T.fragen - T.landFragen} kommen aus ${K.allgemein} allgemeinen Fragen, ${T.landFragen} aus den ${K.proLand} Fragen Ihres Bundeslandes. Bestanden hat, wer in ${T.minuten} Minuten mindestens ${T.bestehen} richtig beantwortet; so steht es in § 1 der Einbürgerungstestverordnung. Die Probeprüfung oben zieht die Fragen genauso aus dem amtlichen Gesamtkatalog des BAMF (Stand ${kat('de-DE')}), wertet jede Antwort sofort aus und zeigt am Ende Ihre Fehler. Der Test kostet bei der Prüfstelle ${eur(T.gebuehr, 0, 'de')}; die Einbürgerung selbst ${eur(G.einbuergerung, 0, 'de')} pro Erwachsenem und ${eur(G.kind, 0, 'de')} pro miteingebürgertem Kind ohne eigenes Einkommen. Wer seit ${E.jahre} Jahren rechtmäßig in Deutschland lebt, B1 nachweist und seinen Lebensunterhalt ohne Bürgergeld bestreitet, hat in der Regel einen Anspruch; der Rechner weiter unten nennt den frühesten Monat für den Antrag.`,
   valeur: 'Passkompass macht es besser als die ersten Suchtreffer: alle 310 Fragen des amtlichen Katalogs mit Lösung, eine Probeprüfung für jedes der 16 Bundesländer, kostenlos und ohne Konto, mit englischer Übersetzung und Bedienung auf Türkisch und Arabisch, und dazu ein Rechner, der nach dem geltenden Staatsangehörigkeitsrecht ohne die abgeschaffte Einbürgerung nach drei Jahren den frühesten Antragsmonat und die Gebühren ausgibt.',
   facts: [
@@ -84,7 +84,7 @@ const tr: HomeLang = {
   title: 'Almanya vatandaşlık testi 2026: 33 soruluk deneme sınavı',
   description: 'Almanya vatandaşlık testi 2026 (Einbürgerungstest) için ücretsiz deneme sınavı: sınavdaki gibi 33 soru, her eyalet için, 310 sorunun cevabı ve başvuru tarihi.',
   h1: 'Almanya vatandaşlık testine çalışın',
-  intro: `Gerçek sınavdaki gibi ${T.fragen} soru; ${T.landFragen} tanesi oturduğunuz eyaletle ilgili. Sorular sınavda olduğu gibi Almanca, bu sayfanın açıklamaları Türkçe.`,
+  intro: `Gerçek Almanya vatandaşlık testindeki gibi ${T.fragen} soru; ${T.landFragen} tanesi oturduğunuz eyaletle ilgili. Sorular sınavda olduğu gibi Almanca, bu sayfanın açıklamaları Türkçe.`,
   resume: `Almanya’da vatandaşlık testi (Einbürgerungstest), içerik olarak „Leben in Deutschland“ testiyle aynıdır ve dört şıklı ${T.fragen} sorudan oluşur: ${T.fragen - T.landFragen} soru ${K.allgemein} genel sorudan, ${T.landFragen} soru ise oturduğunuz eyaletin ${K.proLand} sorusundan gelir. Vatandaşlık Testi Yönetmeliği’nin 1. maddesine göre ${T.minuten} dakika içinde en az ${T.bestehen} doğru cevap veren sınavı geçer. Yukarıdaki deneme sınavı soruları BAMF’ın resmî kataloğundan (${kat('tr-TR')} tarihli) aynı şekilde seçer, her cevabı hemen değerlendirir ve sonunda hatalarınızı gösterir. Sınav merkezi ${eur(T.gebuehr, 0, 'tr')} alır; vatandaşlık harcı yetişkin başına ${eur(G.einbuergerung, 0, 'tr')}, ebeveynle birlikte vatandaş olan ve kendi geliri olmayan çocuk için ${eur(G.kind, 0, 'tr')}’dur. ${E.jahre} yıl yasal ikamet, ${E.sprache} seviyesinde Almanca ve Bürgergeld almadan geçim şartlarını karşılayan kişi kural olarak vatandaşlığa hak kazanır; aşağıdaki hesaplayıcı en erken başvuru ayını gösterir. Türk vatandaşları için önemli bir değişiklik: Alman kanunu artık eski vatandaşlıktan çıkmayı şart koşmuyor.`,
   valeur: 'Passkompass ilk arama sonuçlarından daha iyisini yapar: resmî kataloğun 310 sorusunun tamamı cevaplarıyla, 16 eyaletin her biri için deneme sınavı, ücretsiz ve hesap açmadan, Türkçe açıklamalarla; ayrıca üç yıllık hızlı yolun kaldırılmasından sonraki güncel kanuna göre en erken başvuru ayını ve harçları hesaplayan bir araç.',
   facts: [
@@ -93,7 +93,7 @@ const tr: HomeLang = {
     { k: 'Geçmek için', v: `${T.bestehen} doğru` },
     { k: 'Vatandaşlık harcı', v: eur(G.einbuergerung, 0, 'tr') },
   ],
-  foldTitle: 'Test ve başvuru hakkında',
+  foldTitle: 'Almanya vatandaşlık testi ve başvuru hakkında',
   faqs: [
     { q: 'Vatandaşlık testini geçmek için kaç doğru cevap gerekir?', a: `${T.fragen} sorudan en az ${T.bestehen} tanesini, gözetim altında ${T.minuten} dakika içinde doğru cevaplamanız gerekir. Yanlış cevaplar puan düşürmez; sadece doğru cevaplar sayılır, bu yüzden hiçbir soruyu boş bırakmayın. Geçme notu bütün eyaletlerde aynıdır ve aldığınız belge başka bir eyalete taşınsanız da geçerliliğini korur.` },
     { q: 'Sınav Türkçe yapılabilir mi?', a: 'Hayır. Vatandaşlık testi yalnızca Almancadır. Bu yüzden deneme sınavındaki sorular da sınav kâğıdındaki Almanca metinle aynıdır; düğmeler, açıklamalar ve sonuç kutusu Türkçedir. Ayrıca vatandaşlık için B1 seviyesinde Almanca belgesi gerekir. Soruları Almanca metinle çalışmanız, sınav günü okuyacağınız metne alışmanızı sağlar.' },
@@ -117,7 +117,7 @@ const ar: HomeLang = {
   title: 'اختبار الجنسية الألمانية 2026: اختبار تجريبي من 33 سؤالًا',
   description: 'تدرّب مجانًا على اختبار الجنسية الألمانية 2026 (Einbürgerungstest): 33 سؤالًا كما في الامتحان، لكل ولاية، مع إجابات 310 أسئلة وحاسبة لموعد طلب التجنس.',
   h1: 'تدرّب على اختبار الجنسية الألمانية',
-  intro: `${T.fragen} سؤالًا كما في الامتحان الحقيقي، منها ${T.landFragen} عن ولايتك. الأسئلة بالألمانية كما في الامتحان، والشرح بالعربية.`,
+  intro: `${T.fragen} سؤالًا كما في اختبار الجنسية الألمانية الحقيقي، منها ${T.landFragen} عن ولايتك. الأسئلة بالألمانية كما في الامتحان، والشرح بالعربية.`,
   resume: `يتكوّن اختبار الجنسية الألمانية (Einbürgerungstest)، وهو مطابق في محتواه لاختبار „Leben in Deutschland“، من ${T.fragen} سؤالًا لكل منها أربع إجابات: ${T.fragen - T.landFragen} سؤالًا من بين ${K.allgemein} سؤال عام، و${T.landFragen} أسئلة من بين ${K.proLand} أسئلة خاصة بالولاية التي تسكن فيها. ينجح من يجيب إجابة صحيحة عن ${T.bestehen} سؤالًا على الأقل خلال ${T.minuten} دقيقة، كما تنص المادة الأولى من لائحة اختبار التجنس. يختار الاختبار التجريبي أعلاه الأسئلة بالطريقة نفسها من الكتالوج الرسمي لـ BAMF (بتاريخ ${kat('ar')})، ويصحح كل إجابة فورًا، ويعرض أخطاءك في النهاية. يتقاضى مركز الامتحان ${eur(T.gebuehr, 0, 'ar')}، ورسم التجنس ${eur(G.einbuergerung, 0, 'ar')} لكل بالغ و${eur(G.kind, 0, 'ar')} لكل طفل قاصر بلا دخل يتجنس مع أحد والديه. من أقام إقامة قانونية ${E.jahre} سنوات، وأثبت اللغة الألمانية بمستوى ${E.sprache}، وأعال نفسه دون إعانة Bürgergeld، يحق له عادة التجنس؛ والحاسبة أدناه تعطيك أقرب شهر لتقديم الطلب.`,
   valeur: 'يتفوق Passkompass على أولى نتائج البحث: جميع أسئلة الكتالوج الرسمي الـ310 مع إجاباتها، واختبار تجريبي لكل ولاية من الولايات الـ16، مجانًا ودون حساب، مع شرح بالعربية، إضافة إلى حاسبة تطبق قانون الجنسية الحالي بعد إلغاء طريق السنوات الثلاث لتعطيك أقرب شهر للتقديم والرسوم.',
   facts: [
@@ -126,7 +126,7 @@ const ar: HomeLang = {
     { k: 'للنجاح', v: `${T.bestehen} إجابة صحيحة` },
     { k: 'رسم التجنس', v: eur(G.einbuergerung, 0, 'ar') },
   ],
-  foldTitle: 'كل ما يخص الاختبار والطلب',
+  foldTitle: 'كل ما يخص اختبار الجنسية الألمانية والطلب',
   faqs: [
     { q: 'كم سؤالًا يجب أن أجيب عنه إجابة صحيحة لأنجح في اختبار الجنسية؟', a: `يجب أن تجيب إجابة صحيحة عن ${T.bestehen} سؤالًا على الأقل من ${T.fragen}، تحت المراقبة وخلال ${T.minuten} دقيقة. لا تُخصم نقاط على الإجابات الخاطئة، بل تُحسب الإجابات الصحيحة فقط. علامة النجاح واحدة في كل الولايات، وتبقى الشهادة صالحة إذا انتقلت إلى ولاية أخرى قبل تقديم الطلب.` },
     { q: 'هل يمكن إجراء الاختبار بالعربية؟', a: 'لا. الاختبار بالألمانية فقط، ولذلك تظهر الأسئلة في الاختبار التجريبي بنصها الألماني كما في ورقة الامتحان، بينما الأزرار والشرح ونتيجتك بالعربية. وتحتاج أيضًا إلى شهادة لغة ألمانية بمستوى B1 للتجنس. التدرب على النص الألماني يعوّدك على ما ستقرؤه يوم الامتحان.' },

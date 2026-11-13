@@ -21,8 +21,8 @@ export default defineGuide({
     nav: 'Ehepartner von Deutschen', card: `${E.ehegatteJahre} Jahre Aufenthalt und ${E.eheJahre} Jahre Ehe statt ${E.jahre} Jahre`,
     title: 'Einbürgerung Ehepartner 2026: nach 3 Jahren deutsch werden',
     description: `Einbürgerung als Ehepartner 2026: mit deutschem Ehegatten nach ${E.ehegatteJahre} Jahren Aufenthalt und ${E.eheJahre} Jahren Ehe, Miteinbürgerung des Partners, Rechner für den Antragsmonat.`,
-    h1: 'Deutsche Staatsbürgerschaft durch Heirat: der Weg für Ehegatten',
-    intro: `Mit einem deutschen Ehegatten reichen ${E.ehegatteJahre} Jahre Aufenthalt, wenn die Ehe seit ${E.eheJahre} Jahren besteht. Der Rechner nimmt den späteren der beiden Termine.`,
+    h1: 'Einbürgerung für Ehepartner: der Weg über die Heirat',
+    intro: `Mit einem deutschen Ehepartner reichen für die Einbürgerung ${E.ehegatteJahre} Jahre Aufenthalt, wenn die Ehe seit ${E.eheJahre} Jahren besteht. Der Rechner nimmt den späteren der beiden Termine.`,
     resume: `Wer mit einer Deutschen oder einem Deutschen verheiratet ist oder in eingetragener Lebenspartnerschaft lebt, soll nach § 9 StAG schon nach ${E.ehegatteJahre} Jahren rechtmäßigem gewöhnlichem Aufenthalt eingebürgert werden, wenn die Ehe seit mindestens ${E.eheJahre} Jahren besteht. Beide Fristen müssen gleichzeitig erfüllt sein; es zählt also der spätere Termin. Bei einer Ehe von ${E.eheJahreVerkuerzt} Jahren kann die Aufenthaltszeit aus öffentlichem Interesse weiter verkürzt werden. Alle übrigen Bedingungen des § 10 gelten auch hier: Deutsch auf Niveau ${E.sprache}, Einbürgerungstest, Lebensunterhalt ohne Bürgergeld, keine erhebliche Verurteilung und das Bekenntnis zur Grundordnung. Ist der Partner nicht deutsch, sondern wird selbst eingebürgert, kann die Ehefrau oder der Ehemann nach § 10 Abs. 2 miteingebürgert werden, auch ohne eigene ${E.jahre} Jahre. Wer im September 2021 eingereist ist und im Juni 2025 eine Deutsche geheiratet hat, kommt nach § 10 früher ans Ziel als nach § 9; der Rechner wählt den günstigeren Weg selbst.`,
     faqs: [
       { q: 'Zählt die Zeit vor der Hochzeit für die drei Jahre Aufenthalt?', a: `Ja. Die ${E.ehegatteJahre} Jahre Aufenthalt beziehen sich auf jeden rechtmäßigen gewöhnlichen Aufenthalt, nicht nur auf die Zeit als Ehegatte. Wer etwa schon zwei Jahre mit einer Arbeitserlaubnis hier lebt und dann heiratet, braucht noch ein Jahr Aufenthalt, aber zwei volle Ehejahre. Der Termin, an dem beide Bedingungen erfüllt sind, ist der früheste Antragsmonat.` },
@@ -30,7 +30,7 @@ export default defineGuide({
       { q: 'Brauche ich als Ehepartner auch den Einbürgerungstest?', a: `Ja. § 9 verweist auf die Bedingungen des § 10 Abs. 1, und dazu gehören Kenntnisse der Rechts- und Gesellschaftsordnung. Sie werden in der Regel mit dem Einbürgerungstest nachgewiesen. Auch Deutsch auf Niveau ${E.sprache} ist nötig. Befreit ist nur, wer die Nachweise wegen Krankheit, Behinderung oder Alters nicht erbringen kann.` },
     ],
     body: (h) => `
-<h2>Zwei Wege für Paare</h2>
+<h2>Zwei Wege zur Einbürgerung für Paare</h2>
 <p>Das Gesetz unterscheidet, ob der Partner schon deutsch ist oder gerade selbst eingebürgert wird. Im ersten Fall gilt ${h.src('stag9', '§ 9 StAG')} mit kürzeren Fristen. Im zweiten Fall erlaubt ${h.src('stag10', '§ 10 Abs. 2 StAG')} die Miteinbürgerung: Ehegatte und minderjährige Kinder können zusammen mit der antragstellenden Person eingebürgert werden, auch wenn sie selbst noch keine ${h.n(E.jahre)} Jahre im Land sind. Wie lange die Behörden dann mindestens verlangen, regeln Verwaltungsvorschriften und die Praxis vor Ort; fragen Sie danach, bevor Sie den gemeinsamen Antrag stellen.</p>
 ${h.table(['Situation', 'Aufenthalt', 'Ehe', 'Rechtsgrundlage'], [
   ['Ehe mit einer oder einem Deutschen', `${h.n(E.ehegatteJahre)} Jahre`, `${h.n(E.eheJahre)} Jahre`, '§ 9 Abs. 1 StAG'],
@@ -64,7 +64,7 @@ ${h.mini('einb', { p: ['ehe', 'jahr', 'monat', 'ehejahr'], d: { ehe: 'ja', jahr:
       { q: 'Do spouses also have to pass the citizenship test?', a: `Yes. Section 9 refers to the conditions of section 10(1), which include knowledge of the legal and social order, normally proven by the citizenship test. German at level ${E.sprache} is also required. Only people who cannot provide these proofs because of illness, disability or age are exempt.` },
     ],
     body: (h) => `
-<h2>Two routes for couples</h2>
+<h2>Two routes to citizenship for spouses</h2>
 <p>The law distinguishes between a partner who is already German and one who is naturalising. In the first case ${h.src('stag9', 'section 9 StAG')} applies, with shorter periods. In the second, ${h.src('stag10', 'section 10(2) StAG')} allows joint naturalisation: the spouse and minor children can be naturalised with the applicant even if they have not yet lived here for ${h.n(E.jahre)} years. The minimum the authorities then expect is set by administrative guidelines and local practice; ask before filing the joint application.</p>
 ${h.table(['Situation', 'Residence', 'Marriage', 'Legal basis'], [
   ['Married to a German', `${h.n(E.ehegatteJahre)} years`, `${h.n(E.eheJahre)} years`, 'Section 9(1) StAG'],

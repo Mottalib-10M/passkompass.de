@@ -15,7 +15,7 @@ export default defineGuide({
     title: 'Staatsangehörigkeitsausweis 2026: Feststellung und Kosten',
     description: `Staatsangehörigkeitsausweis 2026: wann Sie feststellen lassen, ob Sie deutsch sind, welche Unterlagen nötig sind, ${G.feststellung} € Gebühr, Unterschied zur Einbürgerung.`,
     h1: 'Staatsangehörigkeitsausweis: sind Sie schon deutsch?',
-    intro: `Manche Menschen sind längst deutsch, ohne es sicher zu wissen. Das Feststellungsverfahren klärt es verbindlich, für ${G.feststellung} €.`,
+    intro: `Manche Menschen sind längst deutsch, ohne es sicher zu wissen. Das Feststellungsverfahren klärt es verbindlich und endet mit dem Staatsangehörigkeitsausweis, für ${G.feststellung} €.`,
     resume: `Der Staatsangehörigkeitsausweis ist das einzige Dokument, das die deutsche Staatsangehörigkeit verbindlich beweist. Reisepass und Personalausweis begründen nur eine Vermutung. Ausgestellt wird er nach § 30 StAG in einem Feststellungsverfahren: Die Staatsangehörigkeitsbehörde prüft auf Antrag, ob jemand deutsch ist, wenn ein berechtigtes Interesse besteht, und die Feststellung gilt dann für alle Behörden. Gefragt ist das vor allem bei Menschen, die von deutschen Eltern oder Großeltern im Ausland abstammen, bei Kindern, deren Erwerb durch Geburt in Deutschland unklar ist, und bei Zweifeln nach langen Auslandsaufenthalten. Nachzuweisen ist mit Urkunden und Registerauszügen, dass die Staatsangehörigkeit mit hinreichender Wahrscheinlichkeit erworben und später nicht verloren wurde. Die Gebühr beträgt nach § 38 StAG ${G.feststellung} €. Wer dagegen nie deutsch war, braucht keine Feststellung, sondern eine Einbürgerung mit ${E.jahre} Jahren Aufenthalt, B1 und Test.`,
     faqs: [
       { q: 'Wer braucht einen Staatsangehörigkeitsausweis?', a: 'Niemand muss ihn haben, solange Pass oder Personalausweis genügen. Verlangt wird er manchmal bei Bewerbungen für den öffentlichen Dienst, bei Erbschaften im Ausland oder wenn eine Behörde Zweifel an der Staatsangehörigkeit hat. Sinnvoll ist er auch für Nachfahren deutscher Auswanderer, die nie einen deutschen Pass hatten, aber durch Abstammung deutsch sein könnten.' },
@@ -23,7 +23,7 @@ export default defineGuide({
       { q: 'Ist die Feststellung billiger als die Einbürgerung?', a: `Ja, ${G.feststellung} € statt ${G.einbuergerung} €. Sie ist aber kein Ersatz: Die Feststellung bestätigt nur eine Staatsangehörigkeit, die schon besteht. Wer nicht über Abstammung, Geburt oder ein anderes Erwerbsereignis deutsch geworden ist, erhält einen ablehnenden Bescheid und muss den Weg der Einbürgerung gehen.` },
     ],
     body: (h) => `
-<h2>Feststellung oder Einbürgerung?</h2>
+<h2>Staatsangehörigkeitsausweis oder Einbürgerung?</h2>
 <p>Die beiden Verfahren werden oft verwechselt, weil dieselbe Behörde sie bearbeitet. Die Einbürgerung verleiht die Staatsangehörigkeit neu. Die Feststellung nach ${h.src('stag30', '§ 30 StAG')} klärt, ob sie schon besteht, und wirkt dann für alle Behörden verbindlich. Die Behörde kann eine Feststellung auch von sich aus treffen, wenn ein öffentliches Interesse besteht.</p>
 ${h.table(['', 'Feststellung', 'Einbürgerung'], [
   ['Frage', 'Bin ich schon deutsch?', 'Kann ich deutsch werden?'],
@@ -49,7 +49,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'deutsch'], c: 'Voraussetzungen
     title: 'Certificate of Nationality Germany 2026: Proof and Fee',
     description: `German certificate of nationality 2026: when to confirm that you are already German, which documents you need, the €${G.feststellung} fee and how it differs from naturalising.`,
     h1: 'Certificate of nationality: are you already German?',
-    intro: `Some people have been German for years without knowing it for sure. The determination procedure settles it bindingly, for €${G.feststellung}.`,
+    intro: `Some people have been German for years without knowing it for sure. The determination procedure settles it bindingly with a certificate of nationality, for €${G.feststellung}.`,
     resume: `The certificate of nationality (Staatsangehörigkeitsausweis) is the only document that bindingly proves German nationality; a passport or ID card only creates a presumption. It is issued under section 30 StAG through a determination procedure: on application, and where there is a legitimate interest, the nationality authority checks whether someone is German, and its finding then binds every authority. It is mostly needed by descendants of German parents or grandparents born abroad, by children whose acquisition by birth in Germany is unclear, and when there are doubts after long stays abroad. You must show with documents and register extracts that German nationality was acquired with sufficient probability and not lost later. The fee under section 38 StAG is €${G.feststellung}. If you were never German, a determination will not help; you need naturalisation, with ${E.jahre} years of residence, B1 German and the test.`,
     faqs: [
       { q: 'Who needs a German certificate of nationality?', a: 'Nobody is required to hold one as long as a passport or ID card is enough. It is sometimes requested for public service jobs, for inheritance matters abroad or when an authority doubts your nationality. It is also useful for descendants of German emigrants who never had a German passport but may be German by descent.' },
@@ -57,7 +57,7 @@ ${h.mini('einb', { p: ['titel', 'jahr', 'monat', 'deutsch'], c: 'Voraussetzungen
       { q: 'Is a determination cheaper than naturalisation?', a: `Yes, €${G.feststellung} instead of €${G.einbuergerung}. But it is not a substitute: a determination only confirms a nationality that already exists. If you did not become German by descent, birth or another acquiring event, you receive a negative decision and must go down the naturalisation route.` },
     ],
     body: (h) => `
-<h2>Determination or naturalisation?</h2>
+<h2>Certificate of nationality or naturalisation?</h2>
 <p>The two procedures are often confused because the same office handles both. Naturalisation grants nationality anew. A determination under ${h.src('stag30', 'section 30 StAG')} establishes whether it already exists and then binds all authorities. The authority can also make a determination of its own motion where there is a public interest.</p>
 ${h.table(['', 'Determination', 'Naturalisation'], [
   ['Question', 'Am I already German?', 'Can I become German?'],

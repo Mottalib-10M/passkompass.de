@@ -56,7 +56,7 @@ ${h.mini('kosten', { p: ['erw', 'kind', 'test'], d: { erw: 2, kind: 3, test: 2 }
       { q: 'Can a teenager apply on their own?', a: 'From 16, young people can file and sign the application themselves. Parents or a guardian act for younger children. A child who turns 18 while the procedure is running must meet all adult requirements, so file the joint application in good time when a child is close to their eighteenth birthday.' },
     ],
     body: (h) => `
-<h2>The three routes compared</h2>
+<h2>Three routes to citizenship for children, compared</h2>
 ${h.table(['Route', 'Condition', 'Fee', 'Legal basis'], [
   ['Descent', 'A parent is German at birth', 'none', 'Section 4(1) StAG'],
   ['Birth in Germany', `A parent: ${h.n(E.jahre)} years’ residence and permanent right of residence`, 'none', 'Section 4(3) StAG'],
